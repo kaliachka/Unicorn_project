@@ -1,0 +1,54 @@
+@font-face {
+    font-family: "Black";
+    src: url("../fonts/SourceSansPro-Black.woff2") format("woff2"),
+         url("../fonts/SourceSansPro-Black.woff") format("woff"),
+         url("../fonts/SourceSansPro-Black.ttf") format("truetype");
+         font-display: swap;
+}
+@font-face {
+    font-family: "Bold";
+    src: url("../fonts/SourceSansPro-Bold.woff2") format("woff2"),
+         url("../fonts/SourceSansPro-Bold.woff") format("woff"),
+         url("../fonts/SourceSansPro-Bold.ttf") format("truetype");
+         font-display: swap;
+}
+@font-face {
+    font-family: "Regular";
+    src: url("../fonts/SourceSansPro-Regular.woff2") format("woff2"),
+         url("../fonts/SourceSansPro-Regular.woff") format("woff"),
+         url("../fonts/SourceSansPro-Regular.ttf") format("truetype");
+         font-display: swap;
+}
+@font-face {
+    font-family: "SemiBold";
+    src: url("../fonts/SourceSansPro-SemiBold.woff2") format("woff2"),
+         url("../fonts/SourceSansPro-SemiBold.woff") format("woff"),
+         url("../fonts/SourceSansPro-SemiBold.ttf") format("truetype");
+         font-display: swap;
+}
+body {
+    font-family: "Regular", sans-serif;
+    font-size: 16px;
+    color: #212121;
+    overflow-x: hidden;
+}
+a {
+    text-decoration: none;
+}
+.container {
+    max-width: 1200px;
+    padding: 0 15px;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+h2 {
+    font-family: "Bold", serif;
+    font-size: 27px;
+    text-align: center;
+    padding-top: 16px;
+    padding-right: 2px;
+    word-spacing: 7px;
+}
+.slide {
+    width: 370px;
+}
