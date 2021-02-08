@@ -1,0 +1,737 @@
+@import "./reset.css";
+@import "./settings.css";
+.wr-header {
+    background-image: url("../media/header/temp.jpg");
+    background-size: cover;
+    height: 1070px;
+    background-position:center;
+    padding: 0;
+}
+header {
+    padding: 0;
+    padding-top: 54px;
+}
+header .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.logo {
+    font-family: "Bold", serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #212121;
+}
+.nav ul {
+    display: flex;
+}
+.nav li {
+    margin-left: 25px;
+}
+.nav a {
+    font-family: "Bold", serif;
+    text-transform: uppercase;
+    color: #212121;
+}
+.wr-home {
+    flex-grow: 1;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding-bottom: 8vh
+}
+.wr-home h3 {
+    font-size: 18px;
+    text-align: right;
+    width: 554px;
+    letter-spacing: -0.1px;
+    word-spacing: 0.5px;
+    line-height: 34px;
+    margin: -12px 0px 0 355px;
+}
+.wr-home p {
+    font-family: "Black", sans-serif;
+    font-size: 72px;
+    text-transform: uppercase;
+    padding-top:385px;
+    text-align: right;
+}
+.wr-home hr {
+    border: none;
+    color: black;
+    background-color: black;
+    height: 4px;
+    width: 140px;
+    margin: 19px 0 45px 778px;
+}
+.btn {
+    margin: 53px 0 0 643px;
+    font-family: "SemiBold", sans-serif;
+    color: #212121;
+    font-size: 18px;
+    width: 275px;
+    height: 50px;
+    border: 2px solid rgb(0, 0, 0);
+    /* border-radius: 2px; */
+    box-sizing: border-box; /*чтобы размер границ рамки не влиял на общий размер*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* section2 */
+.wr-intro {
+    background-color:white;
+    height: 424px;
+}
+.wr-intro img {
+    padding:32px 0 2px 565px;
+}
+
+.wr-intro p {
+    padding: 66px 90px 0;
+    text-align: center;
+    line-height: 33px;
+    letter-spacing: 0.5px;
+    word-spacing: 1.2px;
+}
+/* section3 */
+.wr-services {
+    background-color: #efefef;
+    height: 376px;
+    padding: 0 50px 0 88px;
+    display: table;
+}
+.wr-services .pattern {
+    text-align: left;
+    display: table-cell;
+}
+.wr-services .pattern:not(:last-child) {
+    padding-right: 111px;
+}
+.wr-services .pattern img:last-child {
+    height: 38px;
+}
+.wr-services .pattern img {
+    padding-top: 77px;
+}
+.wr-services .pattern h3 {
+    padding-top: 27px;
+    letter-spacing: 1px;
+    word-spacing: 1.5px;
+    font-family: "SemiBold";
+    font-size: 18px;
+}
+.wr-services .pattern p {
+    width: 290px;
+    padding-top: 28px;
+    letter-spacing: 1.1px;
+    word-spacing: -1.5px;
+    line-height: 27px;
+}
+/* section4 */
+.wr-articles h2 {
+    letter-spacing: 1.6px;
+    padding-top: 102px;
+    word-spacing: 3px;
+    text-transform:capitalize;
+}
+.wr-articles p {
+    text-align: center;
+    padding-top: 35px;
+    width: 780px;
+    word-spacing: 0.1px;
+    padding-left: 195px;
+    line-height: 32px;
+}
+.slider {
+    margin-top: 100px;
+    position: relative;
+    padding: 0px 50px; 
+    padding-bottom: 143px;
+}
+.slider .slick-arrow{
+    position: absolute;
+    top: 40%; 
+    left:97%;
+    margin: -15px 0 0 0; 
+    z-index: 2; 
+    font-size: 0; 
+  }
+.slider .slick-arrow:hover {
+    background-color: #e64a19;
+}
+.slide {
+    width: 370px;
+    height: 370px;
+    background-color: rgb(0, 0, 0);
+   margin-left: -1px;
+}
+.slide-container {
+    width: 370px;
+    /* margin: 0 -15px; */
+}
+.theme p {
+    color:#fff;
+    font-size: 14px;
+    text-transform:uppercase;
+    padding-top: 66px;
+    padding-left: 39px;
+    letter-spacing: 1px;
+}
+.text p {
+    font-size: 25px;
+    color:#fff;
+    padding-top: 26px;
+    padding-left: 39px;
+    letter-spacing: 1.8px;
+    line-height: 34px;
+}
+.photo img{
+    float: left;
+    padding-right: 16px;
+    padding-top: 83px;
+    padding-left: 39px;
+    position: relative;
+}
+.woman-photo img{
+    position: absolute;
+    float: left;
+    top: 173px;
+}
+.woman {
+    margin-left: 120px;
+    margin-top: -35px;
+}
+.photo p {
+    font-family: "SemiBold";
+    font-size: 14px;
+    color:#fff;
+    text-transform: uppercase;
+    padding-top: 94px;
+    letter-spacing: 1.4px;
+    word-spacing: -2px
+}
+.data p {
+    margin-top: -103px;
+    color: #fff;
+    letter-spacing: 1px;
+}
+/* section5 */
+.wr-clients {
+    background-color:#efefef ;
+    height: 365px; 
+    margin-bottom: 92px;
+}
+.wr-clients h2 {
+    letter-spacing: 1.8px;
+    padding: 63px 0 64px 3px;
+}
+.wr-clients .slider{
+    max-width: 90%;
+    position: relative;
+    margin: auto;
+    margin-bottom: 15px;
+}
+.wr-clients .item img {
+    margin-left: 59px;
+}
+.wr-clients .slider .next {
+    position: absolute;
+    top: 33%;
+    left: 1001px;
+    color: rgb(0, 0, 0);
+}
+.wr-clients .slider .next:hover {
+    background-color: #e64a19;
+}
+/* section6 */
+.wr-portfolio {
+    background-color: #efefef;
+    height: 400px;
+}
+.wr-portfolio h2 {
+    letter-spacing: 2px;
+    padding-left: 4px;
+    word-spacing: 0.5px;
+}
+.wr-portfolio p {
+    margin-top: 43px;
+    text-align: center;
+    margin: 35px 233px 0;
+    line-height: 32px;
+}
+.wr-portfolio div{
+    width: 75px;
+    height: 8px;
+    background-color: #e64a19;
+    margin-left: 593px;
+    margin-top: 46px;
+}
+.wr-portfolio .nav ul {
+    display: flex;
+    margin-left: 417px;
+    margin-top: 49px;
+    letter-spacing: 1.3px;
+}
+.wr-portfolio .nav li {
+    
+    margin-right: 3px;
+}
+.wr-portfolio .nav a {
+    font-family: "Regular", sans-serif;
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #212121;
+}
+/* section7 */
+.wr-quote {
+    margin-top: 422px;
+    height: 310px;
+    background-color: #212121;
+    color:white;
+}
+.wr-quote img {
+    margin-left: 621px;
+    margin-top: 84px;
+}
+.wr-quote p {
+    font-size: 20px;
+    text-align: center;
+    margin: 13px 200px;
+    line-height: 39px;
+}
+.wr-quote .author {
+    font-size: 20px;
+    font-style: italic;
+    margin-top: 23px;
+}
+/* section8 */
+.wr-members {
+    margin-top: 100px;
+    margin-bottom: 434px;
+}
+.wr-members h2 {
+    font-family: "Bold";
+    font-size: 27px;
+    margin-top: -13px;
+    margin-left: 4px;
+    letter-spacing: 1.8px;
+    text-transform: capitalize;
+    word-spacing: 1.7px;
+}
+.wr-members p {
+    font-size: 16px;
+    text-align: center;
+    margin: 44px 244px 91px;
+    line-height: 33px;
+}
+.wr-members .member {
+    float: left;
+    margin-right: 180px;
+    margin-top: 2px;
+}
+.team {
+    margin-left:132px;
+}
+.wr-members h3 {
+    font-family: "Bold";
+    font-size: 16px;
+    text-transform: uppercase;
+    padding-top: 54px;
+}
+.wr-members h4 {
+    font-size: 15px;
+    text-transform: capitalize;
+    padding:  15px 5px 0 0;
+}
+.first {
+    float: left;
+}
+.first img {
+    margin-left: -4px;
+}
+.first h4 {
+    margin-left: 2px;
+    margin-top: -1px;
+}
+.second {
+    float:left;
+    margin-left: 184px;
+    margin-top: 4px;
+}
+.second h3 {
+    position: relative;
+    right: -11px;
+    top: -5px;
+}
+.second h4 {
+    position: relative;
+    right: -2px;
+    top: -5px;
+}
+.third {
+    float:left;
+    position: relative;
+    left: 179px;
+    top: 2px;
+}
+.third h3 {
+    position: relative;
+    top: -3px;
+    left: 3px;
+}
+.third h4 {
+    position: relative;
+    top: -3px;
+    left: 1px;
+}
+.last {
+    float: left;
+    position: relative;
+    left: 349px;
+    top: 2px;
+}
+.last h3 {
+    position: relative;
+    top: -3px;
+    left: -2px;
+}
+.last h4 {
+    position: relative;
+    top: -3px;
+    right: -16px;
+}
+/* section9 */
+.wr-facts {
+    background-image: url("../media/facts/font_dark.jpg");
+    background-position: bottom;
+    color: white;
+    position: relative;
+    padding: 181px 0;
+}
+.wr-facts h2 {
+    font-family: "Bold";
+    font-size: 27px;
+    letter-spacing: 1.8px;
+    word-spacing: 1.5px;
+    position: relative;
+    bottom: 97px;
+    left: 2px;
+}
+.statistics {
+    display: grid;
+    grid-template-columns: 432px 369px;
+    max-width: 831px;
+    color:white;
+    position: relative;
+    margin: 0 auto;
+}
+.statistics::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -30px;
+    background-color: rgba(255, 228, 196, 0.55);
+    width: 100%;
+    height: 122%;
+}
+.statistics::after {
+    content: "";
+    width: 75px;
+    height: 7px;
+    background-color: #e64a19;
+    border: none;
+    position: relative;
+    bottom: -40px;
+    left: 377px;
+}
+.numbers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 24px 0;
+    z-index: 10;
+}
+.numbers::after {
+    content: "";
+    width: 74px;
+    height: 5px;
+    background-color: #4d4c4d;
+    border: none;
+    position: relative;
+    bottom: 44px;
+}
+.statistics .numbers h3 {
+    font-family: "Bold";
+    font-size: 27px;
+    letter-spacing: 1.5px;
+    padding-bottom: 37px;
+}
+.statistics .numbers h4 {
+    text-align: justify;
+    font-size: 24px;
+    letter-spacing: 1.5px;
+    word-spacing: 2px;
+}
+/* section10 */
+.wr-blog {
+    margin-top: 108px;
+    display: inline-block;
+    text-align: center;
+}
+.wr-blog .blog {
+    margin-bottom: 43px;
+}
+.wr-blog .blog-2 {
+    margin-bottom: 54px;
+}
+.wr-blog .info {
+    width: 423px;
+    padding: 81px 0 0 120px;
+    float: left;
+}
+.travel-data p {
+    font-size: 14px;
+    color: #555555;
+    word-spacing: 0px;
+    letter-spacing: 1.1px;
+}
+.title p {
+    font-family: "SemiBold", sans-serif;
+    font-size: 24px;
+    color: #222222;
+    padding-top: 15px;
+    letter-spacing: 1.3px;
+    word-spacing: 2.9px;
+}
+.word p {
+    color: #333333;
+    padding-top: 45px;
+    line-height: 28px;
+}
+.wr-blog img {
+    margin-left: 103px;
+}
+.blog-2 img {
+    margin-left: -11px;
+}
+.info-second_block {
+    width: 423px;
+    padding: 81px 0 0 120px;
+    float: right;
+}
+.blog-2 .travel-data p {
+    margin-right: 148px;
+}
+.blog-2 .title p {
+    font-family: "SemiBold", sans-serif;
+    font-size: 24px;
+    color: #222222;
+    padding-top: 15px;
+    letter-spacing: 1.5px;
+    word-spacing: 3px;
+    margin-left: -147px;
+}
+.blog-2 .word p {
+    position: relative;
+    bottom: 9px;
+    right: 74px;
+}
+.blog-3 img {
+    position: relative;
+    top: 65px;
+    left: 49px;
+}
+/* section11 */
+
+
+/* section12 */
+.wr-tweet {
+    margin-top: 364px;
+}
+.wr-tweet .twitter img {
+    margin-left: 618px;
+    margin-top: 17px;
+}
+.wr-tweet .author img {
+    margin-left: 602px;
+    margin-top: 57px;
+}
+.wr-tweet .tweet p {
+    font-size: 20px;
+    text-align: center;
+    width: 850px;
+    padding-top: 31px;
+    padding-left: 206px;
+    line-height: 39px;
+}
+.wr-tweet .at p {
+    font-family: "Bold";
+    text-align: center;
+    padding-top: 28px;
+}
+/* section13 */
+.wr-form {
+    height: 500px;
+    background-color: #212121;
+    color: #ffffff;
+    margin-top: 94px;
+}
+.wr-form .form {
+    width: 500px;
+}
+.wr-form h2 {
+    font-family: "Bold";
+    font-size: 22px;
+    text-transform: uppercase;
+    position: relative;
+    top: 56px;
+    right: 156px;
+    letter-spacing: 0.1px;
+}
+.wr-form p {
+    font-size: 14px;
+    width: 432px;
+    position: relative;
+    top: 82px;
+    left: 46px;
+    line-height: 25px;
+    word-spacing: 0.3px;
+    letter-spacing: 0.1px;
+}
+.wr-form input[type=email] {
+    font-size: 12px;
+    border: none;
+    border-bottom: 1px solid #ffffff;
+    width: 199px;
+    background-color: #212121;
+    position: relative;
+    top: 111px;
+    left: 47px;
+    line-height: 21px;
+    letter-spacing: -0.2px;
+}
+.wr-form input[type=text] {
+    font-size: 12px;
+    border: none;
+    border-bottom: 1px solid #ffffff;
+    width: 199px;
+    background-color: #212121;
+    position: relative;
+    top: 111px;
+    left: 74px;
+    line-height: 20px;
+}
+.wr-form .message input[type=text] {
+    font-size: 12px;
+    border: none;
+    border-bottom: 1px solid #ffffff;
+    width: 429px;
+    background-color: #212121;
+    position: relative;
+    top: 127px;
+    left: 47px;
+    line-height: 22px;
+    letter-spacing: -0.8px;
+}
+.wr-form input[type=text]:focus, input[type=email]:focus {
+    background-color: #ffffff;
+    opacity: 0.5;
+}
+.wr-form input:valid:not(:placeholder-shown) {
+    background-color: rgb(119, 192, 119);
+}
+.wr-form input:invalid:not(:placeholder-shown) {
+    background-color: rgb(209, 83, 66);
+}
+.wr-form .send input[type=submit] {
+    font-size: 12px;
+    visibility: hidden;
+    border-bottom: 1px solid #ffffff;
+    width: 429px;
+}
+.triangle-right {
+    position: relative;
+    left: 85px;
+    top: 158px;
+    width: 0;
+    height: 0;
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+    border-left: 4px solid #ffffff;
+}
+.send p {
+    position: relative;
+    top: 184px;
+    border-bottom: 1px solid #ffffff;
+    width: 1171px;
+    line-height: 40px;
+}
+.form {
+    display: inline-block;
+    position: relative;
+    bottom: 43px;
+}
+.links-1 {
+    display: inline-block;
+    color: #999999;
+    position: relative;
+    top: 8px;
+    left: 145px;
+}
+.wr-form h3{
+    font-family: "SemiBold";
+    font-size: 15px;
+    text-transform: uppercase;
+    position: relative;
+    top: 47px;
+}
+.wr-form .list {
+    margin-top: 30px;
+}
+.wr-form li {
+    list-style-type: none;
+    position: relative;
+    top: 45px;
+    right: 3px;
+    line-height: 23px;
+}
+.wr-form a{
+    font-size: 14px;
+    color: #999999;
+}
+.links-2 {
+    display: inline-block;
+    color: #999999;
+    position: relative;
+    bottom: 40px;
+    left: 273px;
+}
+.links-3 {
+    display: inline-block;
+    color: #999999;
+    position: relative;
+    top: 31px;
+    left: 400px;    
+}
+.bottom {
+    display: inline-block;
+}
+.bottom p{
+    position: relative;
+    top: 222px;
+    left: -674px;
+}
+.bottom-links {
+    display: flex;
+    position: relative;
+    left: 928px;
+    top: 128px;
+    letter-spacing: 0.2px;
+}
+.bottom-links a {
+    font-size: 13px;
+    text-transform: uppercase;
+    margin-right: 29px;
+}
