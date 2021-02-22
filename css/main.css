@@ -1,5 +1,6 @@
 @import "./normalize.css";
 @import "./settings.css";
+@import "./mobile.css";
 .wr-header {
     background-image: url("../media/header/temp.jpg");
     background-size: cover;
@@ -105,6 +106,7 @@ header .wrapper {
     height: 376px;
     padding: 0 50px 0 88px;
     display: table;
+    width: 100%;
 }
 .wr-services .pattern {
     text-align: left;
@@ -154,7 +156,10 @@ header .wrapper {
     padding: 0px 50px; 
     padding-bottom: 143px;
 }
-.slider .slick-arrow{
+.slider-mobile {
+    display: none;
+}
+.slider .slick-arrow, .slider-mobile .slick-arrow {
     position: absolute;
     top: 37%; 
     left:97%;
@@ -162,7 +167,7 @@ header .wrapper {
     z-index: 2; 
     font-size: 0; 
   }
-.slider .slick-arrow:hover {
+.slider .slick-arrow:hover, .slider-mobile .slick-arrow:hover {
     background-color: #e64a19;
 }
 .slide {
@@ -288,13 +293,19 @@ header .wrapper {
     color: #212121;
 }
 /* section7 */
+
 .wr-our_projects {
-    margin-left: 5px;
+   
     margin-top: 45px;
     height:195px;
 }
-.wr-our_projects img {
-    width: 415px;
+
+.wr-our_projects .middle, .wr-our_projects .first, .wr-our_projects .second {
+    width: 400px;
+    margin-left: 15px;
+}
+.wr-our_projects .second {
+    margin-top: 0px;
 }
 /* section8 */
 .wr-quote {
@@ -304,13 +315,14 @@ header .wrapper {
     color:white;
 }
 .wr-quote img {
-    margin-left: 621px;
-    margin-top: 83px;
+    position: relative;
+    left: 50%;
+    top: 30px;
 }
 .wr-quote p {
     font-size: 20px;
     text-align: center;
-    margin: 9px 200px;
+    margin: 58px 200px 41px;
     line-height: 39px;
 }
 .wr-quote .author {
@@ -589,7 +601,7 @@ header .wrapper {
     background-color: #efefef;
     margin-top: 82px;
 }
-.journal {
+.journal, .journal-center {
     text-transform: capitalize;
 }
 .block {
@@ -632,21 +644,22 @@ header .wrapper {
 }
 .wr-tweet .twitter a {
     position: relative;
-    left: 615px;
+    left: 49%;
 }
 .wr-tweet .twitter a:hover img{
     background-color: #e64a19;
     border-color: #e64a19;
 }
 .wr-tweet .author img {
-    margin-left: 602px;
-    margin-top: 57px;
+    position: relative;
+    left: 48%;
+    bottom: -27px;
 }
 .wr-tweet .tweet p {
     font-size: 20px;
     text-align: center;
     width: 850px;
-    padding-top: 4px;
+    padding-top: 12px;
     padding-left: 206px;
     line-height: 39px;
 }
@@ -660,7 +673,7 @@ header .wrapper {
     height: 500px;
     background-color: #212121;
     color: #ffffff;
-    margin-top: 94px;
+    margin-top: 112px;
 }
 .wr-form .form {
     width: 500px;
@@ -818,3 +831,607 @@ header .wrapper {
     text-transform: uppercase;
     margin-right: 29px;
 }
+@media only screen and (max-device-width: 1275px) {
+    .slide {
+        margin-left: -12px;
+    }
+    .wr-clients .slider .next {
+        left: 978px;
+    }
+    .wr-clients .item img {
+        margin-left: 47px;
+    }
+    .wr-our_projects img {
+        width: 400px;
+        margin-left: 8px;
+    }
+    .wr-our_projects {
+        margin-left: 0;
+    }
+    .block {
+        margin-left: 14%;
+    }
+}
+@media only screen and (max-device-width:1240px) {
+    .wr-clients .slider .next {
+        left: 945px;
+    }
+    .wr-clients .item img {
+        margin-left: 11px;
+    }
+    .wr-our_projects img {
+        width: 350px;
+        margin-left: 48px;
+    }
+}
+@media only screen and (max-device-width:1215px) {
+    .wr-clients .slider .next {
+        left: 920px;
+    }
+    .wr-clients .item img {
+        margin-left: -10px;
+    }
+    .slide {
+        width: 340px;
+    }
+    .wr-our_projects img {
+        width: 350px;
+        margin-left: 37px;
+    }
+    .wr-blog img {
+        margin-left: 94px;
+    }
+    .wr-blog .info {
+        padding-left: 95px;
+    }
+    .bottom-links {
+        left: 805px;
+    }
+}
+@media only screen and (max-device-width:1180px) {
+    .wr-blog img {
+        margin-left: 30px;
+    }
+    .slide {
+        width: 325px;
+        height: 350px;
+    }
+    .wr-clients .slider .next {
+        left: 905px;
+    }
+    .wr-clients .item img {
+        margin-left: -18px;
+    }
+    .wr-our_projects img {
+        width: 340px;
+        margin-left: 31px;
+    }
+    .wr-portfolio div {
+        margin-left: 566px;
+    }
+    .nav li {
+        margin-left: 21px;
+    }
+}
+@media only screen and (max-device-width:1366px) and (orientation:landscape) {
+    .logo {
+        font-size: 34px;
+    }
+    .nav a{
+        font-size: 19px;
+    }
+    .wr-clients .item img {
+        margin-left: 80px;
+    }
+    .wr-clients .slider .next {
+        left: 1043px;
+    }
+    .wr-portfolio div {
+        margin-left: 628px;
+    }
+    .wr-portfolio .nav ul {
+        margin-left: 412px;
+    }
+    .wr-our_projects {
+        margin-left: 0;
+    }
+    .wr-our_projects img {
+        width: 453px;
+    }
+    .team {
+        margin-left: 169px;
+    }
+}
+@media only screen and (max-device-width:1366px) and (orientation:portrait) {
+    header .wrapper {
+        display: inherit;
+        position: relative;
+        bottom: 85px;
+        left: 616px;
+    }
+    .logo {
+        font-size: 56px;
+        margin-left: 41px;
+        text-decoration: overline;
+    }
+    .nav ul {
+        display: inherit;
+        line-height: 42px;
+        position: relative;
+        top: 18px;
+        right: -123px;
+        text-decoration: underline;
+    }
+    .nav a {
+        font-size: 30px;
+    }
+    .wr-home p {
+        padding-top: 14px;
+    }
+    .wr-home h3 {
+        font-size: 28px;
+        margin-left: 373px;
+    }
+    .btn {
+        font-size: 28px;
+    }
+    .wr-intro img {
+        padding-left: 482px;
+        width: 50px;
+    }
+    h2 {
+        font-size: 37px;
+    }
+    .wr-intro p {
+        padding-top: 0;
+        font-size: 24px;
+    }
+    .wr-services .pattern {
+        text-align: center;
+        display: inherit;
+    }
+    .wr-services .pattern:last-child {
+        margin-right: 105px;
+    }
+    .wr-services .pattern img {
+        width: 50px;
+    }
+    .wr-services .pattern h3 {
+        font-size: 30px;
+    }
+    .wr-services .pattern p {
+        width: 100%;
+        font-size: 28px;
+    }
+    .wr-articles p {
+        width: 100%;
+        padding-left: 0;
+        font-size: 27px;
+    }
+    .slider-mobile {
+        display: inherit;
+        margin-left: 100px;
+    }
+    .slider {
+        display: none;
+    }
+    .slider .slick-arrow, .slider-mobile .slick-arrow {
+        top: 48%;
+    }
+    .wr-clients {
+        margin-top: 43px;
+    }
+    .wr-clients .slider {
+        display: inherit;
+    }
+    .wr-clients .slider .next {
+        left: 780px;
+    }
+    .wr-clients .item img {
+        margin-left: 23px;
+    }
+    .wr-portfolio p {
+        font-size: 26px;
+    }
+    .wr-portfolio div {
+        margin-left: 469px;
+        height: 10px;
+        width: 94px;
+        margin-top: 30px;
+    }
+    .wr-portfolio .nav ul {
+        margin-left: 92px;
+    }
+    .wr-portfolio .nav a {
+        font-size: 25px;
+    }
+    .wr-our_projects {
+        height: 637px;
+    }
+    .wr-our_projects .middle {
+        margin-top: 30px;
+        margin-left: 25%;
+    }
+    .wr-our_projects img {
+        width: 465px;
+    }
+    .wr-quote img {
+        width: 24px;
+    }
+    .wr-quote p {
+        font-size: 31px;
+    }
+    .wr-quote .author {
+        font-size: 26px;
+    }
+    .wr-members {
+        margin-bottom: 657px;
+    }
+    .wr-members h2 {
+        font-size: 38px;
+    }
+    .wr-members p {
+        font-size: 32px;
+        margin: 42px 98px 34px;
+    }
+    .wr-members .team img {
+        width: 140px;   
+    }
+    .wr-members h3 {
+        font-size: 26px;
+    }
+    .wr-members h4 {
+        font-size: 24px;
+    }
+    .wr-members .first {
+        margin-left: 155px;
+    }
+    .wr-members .third {
+        top: 323px;
+        left:-535px;
+    }
+    .wr-members .last {
+        left:56%;
+    }
+    .wr-facts h2 {
+        font-size: 35px;
+        padding-top: 77px;
+    }
+    .statistics .numbers h3 {
+        font-size: 32px;
+        bottom: 140px;
+    }
+    .numbers::after {
+        bottom: 267px;
+    }
+    .statistics .numbers h4 {
+        font-size: 30px;
+        bottom: 161px;
+    }
+    .statistics .numbers2 h3 {
+        font-size: 32px;
+        bottom: 230px;
+    }
+    .numbers2::after {
+        bottom: 360px;
+    }
+    .statistics .numbers2 h4 {
+        font-size: 30px;
+        bottom: 258px;
+    }
+    .statistics::after {
+        bottom: 308px;
+        left: 379px;
+    }
+    .wr-blog .info, .info-second_block, .wr-blog .info-third_block {
+        width: 100%;
+        padding: 0;
+        float: none;
+    }
+    .travel-data p{
+        font-size: 30px;
+    }
+    .title p {
+        font-size: 37px;
+        margin-top: -20px;
+    }
+    .word p {
+        font-size: 37px;
+        padding-top: 0;
+    }
+    .wr-blog {
+        margin-top: 45px;
+    }
+    .wr-blog .blog {
+        margin-bottom: 70px;
+    }
+    .wr-blog img {
+        width: 85%;
+        margin: 0 30px;
+    }
+    .blog-2 .travel-data p {
+        margin-right: 0;
+    }
+    .blog-2 .title p {
+        font-size: 37px;
+        margin-left: 0;
+    }
+    .blog-2 .word p {
+        bottom: 0;
+        right: 0;
+    }
+    .wr-blog .blog-3 img {
+        width: 85%;
+        margin-right: 120px;
+    }
+    .wr-journal {
+        margin-top: 110px;
+        height: 345px;
+    }
+    .block {
+        margin-top: 37px;
+    }
+    .block hr {
+        width: 86px;
+        right: 194px;
+        top: 50px;
+    }
+    .block h2 {
+        font-size: 28px;
+    }
+    .block h3 {
+        font-size: 25px;
+    }
+    .journal-center {
+        margin-left: 25%;
+    }
+    .wr-tweet .twitter img {
+        width: 34px;
+    }
+    .wr-tweet .author img {
+        width: 90px;
+        left: 46.4%;
+        bottom: -24px;
+    }
+    .wr-tweet .tweet p {
+        font-size: 34px;
+        padding-top: 40px;
+        padding-left: 90px;
+    }
+    .wr-tweet .at p {
+        font-size: 26px;
+    }
+    .wr-form {
+        height: 662px;
+        margin-top: 92px;
+    }
+    .wr-form h2 {
+        font-size: 35px;
+        top: 81px;
+    }
+    .wr-form p {
+        font-size: 29px;
+        left: 19px;
+        line-height: 27px;
+    }
+    .wr-form input[type=email], .wr-form input[type=text] {
+        font-size: 22px;
+    }
+    .wr-form .message input[type=text] {
+        font-size: 22px;
+        left: 47px;
+    }
+    .triangle-right {
+        position: relative;
+        left: 94px;
+        top: 116px;
+        border-top: 8px solid transparent;
+        border-bottom: 8px solid transparent;
+        border-left: 8px solid #ffffff;
+    }
+    .links-1 {
+        left: 65px;
+        bottom: -20px;
+    }
+    .wr-form h3 {
+        font-size: 25px;
+        top: -35px;
+    }
+    .wr-form li {
+        top: -32px;
+    }
+    .wr-form a {
+        font-size: 22px;
+    }
+    .links-2 {
+        left: 123px;
+        bottom: 30px;
+    }
+    .links-3 {
+        left: 180px;
+        top: 40px;
+    }
+    .bottom-links {
+        left: 10px;
+    }
+    .wr-form .bottom-links li {
+        top: -110px;
+        left: 570px;
+    }
+    .bottom p {
+        top: 100px;
+        font-size: 24px;
+    }
+}
+@media only screen and (max-device-width:1000px) {
+    .logo {
+        margin-left: 15px;
+    }
+    .nav ul {
+        right: -85px;
+    }
+    .wr-clients .item img {
+        margin-left: 2px;
+    }
+    .wr-clients .slider .next {
+        left: 763px;
+    }
+    .wr-portfolio .nav ul {
+        margin-top: 15px;
+    }
+    .wr-portfolio div {
+        margin-left: 46%;
+    }
+    .wr-our_projects {
+        height: 600px;
+    }
+    .wr-our_projects img {
+        margin-left: 47px;
+        width: 440px;
+    }
+    .wr-quote {
+        height: 330px;
+    }
+    .wr-members .third {
+        top: -19px;
+        left: 150px;
+    }
+    .wr-members .last {
+        left: 37%;
+    }
+    .links-1 {
+        left: 55px;
+    }
+    .links-2 {
+        left: 97px;
+    }
+    .links-3 {
+        left: 136px;
+    }
+    .wr-form .bottom-links li {
+        left: 521px;
+    }
+}
+@media only screen and (max-device-width:940px) {
+    .logo {
+        margin-left: -40px;
+    }
+    .nav ul {
+        right: 95px;
+    }
+    .wr-intro img {
+        padding-left: 430px;
+    }
+    .wr-clients .item img {
+        margin-left: 0px;
+        width: 1020px;
+    }
+    .wr-clients .slider .next {
+        left: 695px;
+    }
+    .wr-portfolio .nav ul {
+        margin-left: 260px;
+    }
+    .wr-our_projects {
+        height: 565px;
+    }
+    .wr-our_projects img {
+        margin-left: 35px;
+        width: 417px;
+    }
+    .links-1 {
+        left: 26px;
+    }
+    .links-2 {
+        left: 60px;
+    }
+    .links-3 {
+        left: 88px;
+    }
+    .wr-form .bottom-links li {
+        top: -20px;
+        left: 463px;
+    }
+}
+    @media only screen and (max-device-width:987px) and (orientation:landscape)  {
+        .wr-intro img {
+            padding-left: 460px;
+        }
+        .container {
+            padding: 0;
+        }
+        .wr-services {
+            padding-left: 42px;
+        }
+        .wr-services .pattern:not(:last-child) {
+            padding-right: 18px;
+        }
+        .wr-articles p {
+            padding-left: 120px;
+        }
+        .slide {
+            width: 260px;
+        }
+        .text p {
+            font-size: 20px;
+        }
+        .photo img {
+            padding-top:50px;
+        }
+        .woman-photo img {
+            top: 236px;
+        }
+        .wr-clients .item img {
+            margin-left: -10px;
+        }
+        .wr-clients .slider .next {
+            left: 751px;
+        }
+        .wr-portfolio .nav ul {
+            margin-top: 45px;
+            margin-left: 260px;
+        }
+        .wr-our_projects .first, .wr-our_projects .second {
+            margin-left: 28px;
+            width: 452px;
+        }
+        .wr-our_projects .middle {
+            width: 452px;
+            margin-top: 30px;
+            margin-left: 27%;
+        }
+        .team {
+            margin-left: 135px;
+        }
+        .wr-members .second {
+            margin-left: 117px;
+        }
+        .wr-members .third {
+            top: 0;
+            left: 89px;
+        }
+        .wr-members .last {
+            left: 170px;
+        }
+        .wr-blog {
+            margin-top: 85px;
+        }
+        .wr-blog img {
+            width: 413px;
+            margin-top: 20px;
+        }
+        .block {
+            margin-left: 11.5%;
+        }
+        .wr-tweet .tweet p {
+            padding-left: 70px;
+        }
+        .wr-form .bottom-links li {
+            left: -155px;
+            top: -22px;
+        }
+        .bottom p {
+            top: 125px;
+            left: 50px;
+        }
+    }

@@ -7,6 +7,15 @@ $(document).ready(function(){
   prevArrow: false
     });
 });
+$(document).ready(function(){
+    $('.slider-mobile').slick( {
+        infinite: true,
+  slidesToShow: 2,
+  slidesToScroll: 1,
+  nextArrow: "<img src='./media/pointer.png'>",
+  prevArrow: false
+    });
+});
 /* Индекс слайда по умолчанию */
 var slideIndex = 1;
 showSlides(slideIndex);
@@ -29,5 +38,5 @@ function showSlides(n) {
         slides[i].style.display = "none";
     }
     slides[slideIndex - 1].style.display = "block";
-    dots[slideIndex - 1].className += " active";
+    dots[slideIndex - 1]+= " active";
 }

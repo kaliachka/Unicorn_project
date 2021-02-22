@@ -3,7 +3,7 @@
 {
     position: relative;
 
-    display: block;
+    /* display: block; */
     box-sizing: border-box;
 
     -webkit-user-select: none;
@@ -51,7 +51,7 @@
 .slick-track
 {
     position: relative;
-    top: 0;
+    top: -13px;
     left: 0;
 
     display: block;
