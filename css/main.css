@@ -1353,7 +1353,7 @@ header .wrapper {
         left: 463px;
     }
 }
-    @media only screen and (max-device-width:987px) and (orientation:landscape)  {
+    @media only screen and (max-device-width:740px) and (orientation:landscape)  {
         .wr-intro img {
             padding-left: 460px;
         }
