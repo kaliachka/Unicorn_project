@@ -1353,7 +1353,7 @@ header .wrapper {
         left: 463px;
     }
 }
-    @media only screen and (max-device-width:740px) and (orientation:landscape)  {
+    @media only screen and (max-device-width:987px)   {
         .wr-intro img {
             padding-left: 460px;
         }
@@ -1417,8 +1417,8 @@ header .wrapper {
             margin-top: 85px;
         }
         .wr-blog img {
-            width: 413px;
-            margin-top: 20px;
+            width: 330px;
+            margin-top: 73px;
         }
         .block {
             margin-left: 11.5%;
@@ -1433,5 +1433,200 @@ header .wrapper {
         .bottom p {
             top: 125px;
             left: 50px;
+        }
+    }
+    @media only screen and (max-device-width:740px) and (orientation:landscape) {
+        .wr-home p {
+            font-size: 67px;
+        }
+        .wr-home hr {
+            bottom: 50px;
+            left: 382px;
+        }
+        .wr-home h3 {
+            font-size: 18px;
+            width: 419px;
+            margin: 25px 0px 0 489px;
+        }
+        .wr-intro img {
+            padding-left: 350px;
+        }
+        .wr-services .pattern:not(:last-child) {
+            padding-right: 43px;
+        }
+        .wr-services .pattern h3 {
+            font-size: 13px;
+        }
+        .wr-services .pattern p {
+            width: 200px;
+        }
+        .wr-articles {
+            margin-bottom: 35px;
+        }
+        .wr-articles p {
+            font-size: 16px;
+            width: 496px;
+            margin-left: 0px;
+        }
+        .slider-mobile {
+            display: inherit;
+            margin-left: 25px;
+        }
+        .slider {
+            display: none;
+        }
+        .slider .slick-arrow, .slider-mobile .slick-arrow {
+            top: 48%;
+            left: 90%;
+        }
+        .slide {
+            height: 338px;
+        }
+        .wr-clients {
+            margin-top: 0;
+        }
+        .wr-clients .slider {
+            display: inherit;
+        }
+        .wr-clients .item img {
+            margin-left: 21px;
+        }
+        .wr-clients .slider .next {
+            left: 526px;
+            top: 64px;
+        }
+        .wr-portfolio {
+            height: 343px;
+        }
+        .wr-portfolio p {
+            margin: 33px 120px 0;
+        }
+        .wr-portfolio .nav ul {
+            margin-left: 137px;
+        }
+        .wr-our_projects .first, .wr-our_projects .second, .wr-our_projects .middle {
+            width: 329px;
+        }
+        .wr-quote {
+            margin-top: 50px;
+        }
+        .wr-members {
+            margin-top: 50px;
+            margin-bottom: 510px;
+        }
+        .wr-members p {
+            margin: 42px 136px 91px;
+        }
+        .wr-members .first {
+            margin-left: 63px;
+            margin-top: -60px;
+        }
+        .wr-members .second {
+            margin-left: 150px;
+            margin-top: -55px;
+        }
+        .wr-members .third {
+            top: 185px;
+            left: -391px;
+        }
+        .wr-members .last {
+            left: 52%;
+            top: -64px;
+        }
+        .wr-facts {
+            background-position: left;
+        }
+        .statistics {
+            top: 184px;
+            margin-left: -35px;
+        }
+        .wr-blog .blog {
+            margin-bottom: 43px;
+            margin-top: -100px;
+        }
+        .wr-blog .info, .wr-blog .info-third_block {
+            width: 265px;
+        }
+        .wr-blog img {
+            margin-top: 122px;
+            margin-left: 7px;
+        }
+        /* .word p {
+            padding-top: 0;
+        } */
+        .info-second_block {
+            width: 260px;
+            padding: 77px 0 0 120px;
+        }
+        .blog-2 .travel-data p {
+            margin-right: 88px;
+        }
+        .blog-2 .title p {
+            margin-left: -118px;
+        }
+        .blog-2 .word p {
+            bottom: 28px;
+            right: 57px;
+        }
+        .blog-3 img {
+            top: -10px;
+            left: 23px;
+        }
+        .block {
+            margin-left: 5%;
+        }
+        .block hr {
+            height: 6px;
+            right: 116px;
+        }
+        .wr-tweet .tweet p {
+            padding-left: 112px;
+            width: 510px;
+        }
+        .wr-tweet .twitter a {
+            left: 48%;
+        }
+        .wr-tweet .author img {
+            left: 46%;
+        }
+        .wr-form h2 {
+            right: 190px;
+        }
+        .wr-form p {
+            width: 326px;
+            left: 15px;
+        }
+        .wr-form input[type=email] {
+            left: 15px;
+            width: 160px;
+        }
+        .wr-form input[type=text] {
+            left: 25px;
+            width: 160px;
+        }
+        .wr-form .message input[type=text] {
+            width: 334px;
+            left: 15px;
+        }
+        .triangle-right {
+            left: 54px;
+        }
+        .bottom p {
+            top: 117px;
+            left: 15px;
+        }
+        .wr-form .bottom-links li {
+            left: -375px;
+            top: -27px;
+        }
+        .links-1 {
+            left: -79px;
+        }
+        .links-2 {
+            left: -40px;
+        }
+        .links-3 {
+            left: 5px;
+            top: 13px;
         }
     }
