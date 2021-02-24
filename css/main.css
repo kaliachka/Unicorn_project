@@ -156,10 +156,10 @@ header .wrapper {
     padding: 0px 50px; 
     padding-bottom: 143px;
 }
-.slider-mobile {
+.slider-mobile, .slider-portrait {
     display: none;
 }
-.slider .slick-arrow, .slider-mobile .slick-arrow {
+.slider .slick-arrow, .slider-mobile .slick-arrow, .slider-portrait .slick-arrow {
     position: absolute;
     top: 37%; 
     left:97%;
@@ -167,7 +167,7 @@ header .wrapper {
     z-index: 2; 
     font-size: 0; 
   }
-.slider .slick-arrow:hover, .slider-mobile .slick-arrow:hover {
+.slider .slick-arrow:hover, .slider-mobile .slick-arrow:hover, .slider-portrait .slick-arrow:hover {
     background-color: #e64a19;
 }
 .slide {
@@ -921,10 +921,10 @@ header .wrapper {
         font-size: 19px;
     }
     .wr-clients .item img {
-        margin-left: 80px;
+        margin-left: 60px;
     }
     .wr-clients .slider .next {
-        left: 1043px;
+        left: 983px;
     }
     .wr-portfolio div {
         margin-left: 628px;
@@ -1012,7 +1012,7 @@ header .wrapper {
         display: inherit;
         margin-left: 100px;
     }
-    .slider {
+    .slider, .slider-portrait {
         display: none;
     }
     .slider .slick-arrow, .slider-mobile .slick-arrow {
@@ -1054,6 +1054,9 @@ header .wrapper {
     }
     .wr-our_projects img {
         width: 465px;
+    }
+    .wr-quote {
+        margin-top: 125px;
     }
     .wr-quote img {
         width: 24px;
@@ -1472,7 +1475,7 @@ header .wrapper {
             display: inherit;
             margin-left: 25px;
         }
-        .slider {
+        .slider, .slider-portrait {
             display: none;
         }
         .slider .slick-arrow, .slider-mobile .slick-arrow {
@@ -1628,5 +1631,384 @@ header .wrapper {
         .links-3 {
             left: 5px;
             top: 13px;
+        }
+    }
+    @media only screen and (max-device-width:375px) {
+        .wr-header {
+            background-position: bottom;
+        }
+        header .wrapper {
+            left: 90px;
+        }
+        .nav ul {
+            right: -23px;
+        }
+        .wr-home p {
+            font-size: 52px;
+            left: 695px;
+            padding-top: 0;
+        }
+        .wr-home hr {
+            left: 455px;
+        }
+        .wr-home h3 {
+            font-size: 31px;
+            margin-left: 683px;
+            width: 302px;
+        }
+        .btn {
+            margin: 53px 0 0 709px;
+        }
+        .wr-intro img {
+            padding-left: 156px;
+        }
+        .wr-intro p {
+            padding: 39px 5px 0;
+        }
+        .wr-services {
+            margin-top: 295px;
+        }
+        .wr-services .pattern {
+            text-align: center;
+        }
+        .wr-services .pattern:last-child {
+            margin-right: 76px;
+        }
+        .wr-services .pattern:not(:last-child) {
+            padding-right: 76px;
+        }
+        .wr-articles p {
+            padding-left: 28px;
+            width: 85%
+        }
+        .slider-portrait {
+            display: inherit;
+            margin-left: 25px;
+        }
+        .slider, .slider-mobile {
+            display: none;
+        }
+        .slide {
+            height: 342px;
+        }
+        .slider-portrait .slick-arrow {
+            top: 52%;
+            left: 86%;
+        }
+        .slide .photo img {
+            width: 60px;
+        }
+        .wr-clients {
+            height: 232px;
+        }
+        .wr-clients h2 {
+            padding: 28px 0 12px 3px;
+        }
+        .wr-clients .slider {
+            display: inherit;
+        }
+        .wr-clients .item img {
+            margin-left: -293px;
+            margin-top: 26px;
+            width: 750px;
+        }
+        .wr-clients .slider .next {
+            left: 202px;
+            top: 52px;
+        }
+        .slick-slide img {
+            width: 12px;
+        }
+        .wr-portfolio {
+            height: 465px;
+        }
+        .wr-portfolio p {
+            margin: 33px 10px 0;
+        }
+        .wr-portfolio div {
+            margin-left: 40%;
+            height: 8px;
+            width: 93px;
+            margin-top: 26px;
+        }
+        .wr-portfolio .nav ul {
+            margin-left: -85px;
+            margin-top: -10px;
+        }
+        .wr-portfolio .nav li {
+            margin-right: -9px;
+        }
+        .wr-portfolio .nav a {
+            font-size: 20px;
+        }
+        .wr-our_projects {
+            margin-top: 25px;
+        }
+        .wr-our_projects .first, .wr-our_projects .second, .wr-our_projects .middle {
+            width: 375px;
+            margin-left: 0;
+        }
+        .wr-our_projects .second {
+            margin-top: 15px;
+        }
+        .wr-our_projects .middle {
+            margin-top: 15px;
+        }
+        .wr-quote {
+            margin-top: 410px;
+        }
+        .wr-quote p {
+            margin: 58px 20px 41px;
+        }
+        .wr-quote {
+            height: 425px;
+        }
+        .wr-members {
+            margin-bottom: 160vh;
+        }
+        .wr-members h2 {
+            margin-top: -60px;
+        }
+        .wr-members p {
+            margin: 42px 25px 34px;
+        }
+        .wr-members .first, .wr-members .second {
+            margin-left: -9px;
+        }
+        .wr-members .third, .wr-members .last {
+            left: -9px;
+        }
+        .wr-facts {
+            background-position: left;
+        }
+        .statistics {
+            grid-template-columns: 200px 162px;
+        }
+        .statistics::before {
+            height: 140%;
+        }
+        .statistics .numbers h4, .statistics .numbers2 h4 {
+            font-size: 25px;
+            text-align: center;
+        }
+        .word p {
+            font-size: 25px;
+            width: 353px;
+            margin-left: 10px;
+        }
+        .travel-data p {
+            font-size: 25px;
+        }
+        .title p {
+            font-size: 33px;
+            margin-top: -15px;
+        }
+        .wr-journal {
+            height: 545px;
+        }
+        .wr-blog {
+            margin-top: 15px;
+        }
+        .wr-blog img {
+            width: 345px;
+            margin: 0 -84px;
+        }
+        .wr-blog .blog-3 img {
+            margin-top: -60px;
+            width: 345px;
+            left: 42px;
+            margin-right: 0;
+        }
+        .block {
+            margin-left: 24.5%;
+            margin-top: 0px;
+        }
+        .journal-center {
+            margin-left: -1%;
+        }
+        .wr-tweet .twitter a {
+            left: 46.5%;
+        }
+        .wr-tweet .author img {
+            left: 39%;
+        }
+        .wr-tweet .tweet p {
+            width: 325px;
+            font-size: 22px;
+            padding-top: 25px;
+            padding-left: 27px;
+        }
+        .wr-tweet .at p {
+            font-size: 20px;
+        }
+        .wr-form {
+            height: 1000px;
+        }
+        .wr-form p {
+            font-size: 26px;
+            left: 14px;
+            width: 332px;
+            top: 80px;
+        }
+        .wr-form input[type=email] {
+            width: 160px;
+            top: 95px;
+            left: 15px;
+        }
+        .wr-form input[type=text] {
+            width: 160px;
+            top: 95px;
+            left: 41px;
+        }
+        .wr-form .message input[type=text] {
+            width: 351px;
+            top: 115px;
+            left: 15px;
+        }
+        .wr-form .send p {
+            width: 351px;
+            position: relative;
+            top: 385px;
+        }
+        .triangle-right {
+            left: 83px;
+            top: 336px;
+        }
+        .links-1 {
+            left: 15px;
+            bottom: 31px;
+        }
+        .links-2 {
+            left: 17px;
+            bottom: 81px;
+        }
+        .links-3 {
+            top: -8px;
+            left: 42px;
+        }
+        .wr-form .bottom p {
+            font-size: 24px;
+            position: relative;
+            top: 33px;
+        }
+        .bottom-links {
+            left: 165px;
+        }
+        .wr-form .bottom-links li {
+            left: -155px;
+            top: -40px;
+        }
+    }
+    @media only screen and (max-device-width:812px) {
+        .wr-intro img {
+            padding-left: 388px;
+        }
+        .wr-services {
+            padding-left: 10px;
+        }
+        .wr-services .pattern:not(:last-child) {
+            padding-right: 27px;
+        }
+        .wr-services .pattern p {
+            width: 250px;
+        }
+        .wr-articles p {
+            padding-left: 15px;
+        }
+        .slider-mobile {
+            display: inherit;
+            margin-left: 100px;
+        }
+        .slider, .slider-portrait {
+            display: none;
+        }
+        .slider-mobile .slick-arrow {
+            top: 50%;
+            left: 95%;
+        }
+        .wr-clients {
+            margin-top: 43px;
+        }
+        .wr-clients .slider {
+            display: inherit;
+        }
+        .wr-clients .item img {
+            margin-left: -14px;
+            width: 915px;
+        }
+        .wr-clients .slider .next {
+            left: 591px;
+        }
+        .wr-portfolio {
+            height: 300px;
+        }
+        .wr-portfolio p {
+            text-align: center;
+            margin: 24px 142px 0;
+        }
+        .wr-portfolio div {
+            margin-top: 30px;
+        }
+        .wr-portfolio .nav ul {
+            margin-top: 25px;
+            margin-left: 180px;
+        }
+        .wr-our_projects .first, .wr-our_projects .second {
+            margin-left: 21px;
+            width: 375px;
+        }
+        .wr-our_projects .middle {
+            width: 375px;
+            margin-top: 25px;
+            margin-left: 26%;
+        }
+        .wr-quote {
+            height: 300px;
+            margin-top: 145px;
+        }
+        .wr-quote p {
+            margin: 58px 120px 41px;
+        }
+        .wr-members {
+            margin-top: 40px;
+            margin-bottom: 400px;
+        }
+        .wr-members p {
+            margin: 42px 175px 91px;
+        }
+        .first {
+            margin-left: -105px;
+        }
+        .wr-members .second {
+            margin-left: 100px;
+        }
+        .wr-facts {
+            background-position: left;
+        }
+        .wr-blog {
+            margin-top: 0px;
+        }
+        .wr-blog .info, .info-second_block, .wr-blog .info-third_block {
+            width: 310px;
+        }
+        .wr-blog .info-third_block {
+            padding-left: 100px;
+        }
+        .block {
+            margin-left: 8%;
+        }
+        .wr-tweet .twitter a {
+            left: 48.3%;
+        }
+        .wr-tweet .author img {
+            left: 46.5%;
+        }
+        .wr-tweet .tweet p {
+            padding-left: 15px;
+            width: 775px;
+        }
+        .bottom-links {
+            left: 655px;
+            top: -15px;
         }
     }

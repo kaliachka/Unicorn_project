@@ -16,6 +16,15 @@ $(document).ready(function(){
   prevArrow: false
     });
 });
+$(document).ready(function(){
+    $('.slider-portrait').slick( {
+        infinite: true,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  nextArrow: "<img src='./media/pointer.png'>",
+  prevArrow: false
+    });
+});
 /* Индекс слайда по умолчанию */
 var slideIndex = 1;
 showSlides(slideIndex);
