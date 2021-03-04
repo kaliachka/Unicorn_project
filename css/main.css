@@ -106,7 +106,7 @@ header .wrapper {
     height: 376px;
     padding: 0 50px 0 88px;
     display: table;
-    width: 100%;
+    max-width: 100%;
 }
 .wr-services .pattern {
     text-align: left;
@@ -234,29 +234,25 @@ header .wrapper {
     letter-spacing: 1.8px;
     padding: 62px 0 38px 3px;
 }
-.wr-clients .slider{
-    max-width: 90%;
-    margin: auto;
-}
-.wr-clients .item img {
-    margin-left: 59px;
+.wr-clients .clients-slider img, .wr-clients .clients-slider-mobile img {
     margin-top: 15px;
 }
-.wr-clients .slider .next {
-    position: absolute;
-    top: 42%;
-    left: 995px;
-    color: rgb(0, 0, 0);
-    border: none;
-    background-color: #efefef;
+.wr-clients .clients-slider img:hover, .wr-clients .clients-slider-mobile img:hover {
+    filter: saturate(2500%);
 }
-.wr-clients .slider .next:hover {
-    background-color: #e64a19;
+.wr-clients .clients-slider-mobile {
+    display: none;
 }
+.wr-clients .slick-arrow {
+    position: relative;
+    bottom: 90px;
+    left: 97%;
+}
+
 /* section6 */
 .wr-portfolio {
     background-color: #efefef;
-    height: 400px;
+    height: 335px;
 }
 .wr-portfolio h2 {
     letter-spacing: 2.1px;
@@ -286,27 +282,43 @@ header .wrapper {
     
     margin-right: 3px;
 }
-.wr-portfolio .nav a {
+.wr-portfolio .nav button {
     font-family: "Regular", sans-serif;
     font-size: 16px;
     text-transform: capitalize;
     color: #212121;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+.wr-portfolio .nav button:active {
+    background-color: #e64a19;
+    border-radius: 45%;
+    outline: none;
+}
+.wr-portfolio .nav button:focus {
+    outline: none;
+}
+.wr-portfolio .nav button:active .wr-our_projects{
+    height: 200px;
 }
 /* section7 */
 
 .wr-our_projects {
-   
-    margin-top: 45px;
-    height:195px;
+    margin-top: 25px;
+    height:450px;
+}
+.wr-our_projects .item {
+    /* display: inline-block; */
+    float: left;
+}
+.wr-our_projects img {
+    width: 290px;
+    height: 300px;
+    margin-left: 18px;
+    margin-top: 5px;
 }
 
-.wr-our_projects .middle, .wr-our_projects .first, .wr-our_projects .second {
-    width: 400px;
-    margin-left: 15px;
-}
-.wr-our_projects .second {
-    margin-top: 0px;
-}
 /* section8 */
 .wr-quote {
     margin-top: 197px;
@@ -831,18 +843,418 @@ header .wrapper {
     text-transform: uppercase;
     margin-right: 29px;
 }
+@media only screen and (max-device-width:1800px) {
+    .logo {
+        font-size: 48px;
+    }
+    .nav a {
+        font-size: 26px;
+    }
+    .wr-home p {
+        font-size: 80px;
+        left: 500px;
+    }
+    .wr-home hr {
+        height: 6px;
+        width: 245px;
+        left: 378px;
+    }
+    .wr-home h3 {
+        font-size: 32px;
+        width: 635px;
+    }
+    .btn {
+        margin-left: 722px;
+        font-size: 36px;
+        height: 65px;
+        border: 3px solid rgb(0, 0, 0);
+    }
+    .container {
+        max-width: 1500px;
+    }
+    .wr-intro img {
+        width: 60px;
+        padding-left: 705px;
+    }
+    h2 {
+        font-size: 40px;
+    }
+    .wr-intro p {
+        padding: 0;
+        font-size: 35px;
+    }
+    .wr-services .pattern:not(:last-child) {
+        padding-right: 165px;
+    }
+    .wr-services .pattern h3 {
+        font-size: 33px;
+    }
+    .wr-services .pattern p {
+        width: 365px;
+        font-size: 36px;
+        padding-top: 0;
+    }
+    .wr-articles p {
+        padding-top: 5px;
+        width: 1000px;
+        padding-left: 270px;
+        font-size: 35px;
+    }
+    .slider .slick-arrow, .slider-mobile .slick-arrow, .slider-portrait .slick-arrow {
+        width: 20px;
+    }
+    .theme p {
+        font-size: 28px;
+        padding-top: 42px;
+    }
+    .text p {
+        font-size: 30px;
+        padding-left: 15px;
+    }
+    .photo img {
+        width: 80px;
+    }
+    .photo p {
+        font-size: 25px;
+        padding-top: 60px;
+    }
+    .woman-photo img {
+        top: 235px;
+    }
+    .woman p {
+        position: relative;
+        top: -30px;
+    }
+    .wr-portfolio p {
+        margin: 33px 170px 0;
+        font-size: 35px;
+    }
+    .wr-portfolio div {
+        width: 115px;
+        margin-left: 815px;
+    }
+    .wr-portfolio .nav button {
+        font-size: 35px;
+        margin-left: 45px;
+    }
+    .wr-our_projects img {
+        width: 425px;
+        height: 340px;
+    }
+    .wr-our_projects {
+        height: 520px;
+    }
+    .wr-quote img {
+        width: 30px;
+    }
+    .wr-quote p {
+        font-size: 33px;
+    }
+    .wr-quote .author {
+        font-size: 31px;
+    }
+    .wr-members h2 {
+        font-size: 40px;
+    }
+    .wr-members p {
+        font-size: 38px;
+    }
+    .first img {
+        margin-left: 200px;
+    }
+    .wr-members h3 {
+        font-size: 28px;
+    } 
+    .first h3 {
+        margin-left: 200px;
+    }
+    .wr-members h4 {
+        font-size: 28px;
+    }
+    .first h4 {
+        margin-left: 200px;
+    }
+    .third {
+        left: 150px;
+    }
+    .wr-facts h2 {
+        font-size: 30px;
+    }
+    .wr-blog .info, .info-second_block, .wr-blog .info-third_block {
+        width: 800px;
+    }
+    .wr-blog img {
+        width: 700px;
+    }
+    .travel-data p {
+        font-size: 33px;
+    }
+    .title p {
+        font-size: 39px;
+        margin-top: -4px;
+    }
+    .word p {
+        padding-top: 5px;
+        font-size: 35px;
+    }
+    .blog-2 .title p {
+        font-size: 39px;
+        margin-left: 0;
+    }
+    .blog-2 .travel-data p {
+        margin-right: 15px;
+    }
+    .blog-2 .word p {
+        right: 10px;
+    }
+    .blog-3 img {
+        left: 0;
+    }
+    .block {
+        margin-left: 10%;
+    }
+    .block hr {
+        width: 120px;
+        right: 232px;
+        top: 58px;
+    }
+    .block h2 {
+        font-size: 35px;
+    }
+    .block h3 {
+        font-size: 28px;
+    }
+    .wr-tweet .twitter img {
+        width: 50px;
+    }
+    .wr-tweet .author img {
+        position: relative;
+        left: 47.5%;
+        bottom: -31px;
+        width: 100px;
+    }
+    .wr-tweet .tweet p {
+        font-size: 37px;
+        width: 950px;
+        padding-top: 23px;
+        padding-left: 400px;
+    }
+    .wr-tweet .at p {
+        font-size: 33px;
+    }
+    .wr-form {
+        height: 600px;
+    }
+    .wr-form h2 {
+        font-size: 33px;
+        right: 135px;
+    }
+    .wr-form p {
+        width: 600px;
+        font-size: 25px;
+    }
+    .wr-form input[type=email], .wr-form input[type=text] {
+        font-size: 30px;
+        border-bottom: 2px solid #ffffff;
+        width: 248px;
+        top: 120px;
+    }
+    .wr-form .message input[type=text] {
+        font-size: 30px;
+        border-bottom: 2px solid #ffffff;
+        width: 529px;
+        top: 150px;
+    }
+    .triangle-right {
+        left: 113px;
+        top: 113px;
+        border-top: 8px solid transparent;
+        border-bottom: 8px solid transparent;
+        border-left: 8px solid #ffffff;
+    }
+    .bottom p {
+        top: 225px;
+        left: -807px;
+    }
+    .wr-form h3 {
+        font-size: 28px;
+    }
+    .wr-form li {
+        line-height: 27px;
+    }
+    .wr-form a {
+        font-size: 23px;
+    }
+    .links-1 {
+        bottom: -5px;
+        left: 365px;
+    }
+    .links-2 {
+        bottom: 53px;
+        left: 470px;
+    }
+    .links-3 {
+        top: 32px;
+        left: 575px;
+    }
+    .bottom-links {
+        left: 1115px;
+        top: 100px;
+    }
+}
+@media only screen and (max-device-width:1600px) {
+    .wr-portfolio {
+        height: 375px;
+    }
+    .wr-our_projects img {
+        width: 370px;
+    }
+    .first {
+        margin-left: -190px;
+    }
+    .wr-blog .info, .info-second_block, .wr-blog .info-third_block {
+        width: 700px;
+    }
+    .wr-blog img {
+        width: 600px;
+    }
+    .block {
+        margin-left: 6%;
+    }
+    .wr-tweet .tweet p {
+        padding-left: 310px;
+    }
+    .bottom-links {
+        left: 1060px;
+    }
+}
+@media only screen and (max-device-width:1500px) {
+    .wr-our_projects img {
+        width: 335px;
+        height: 335px;
+        margin-left: 28px;
+    }
+    .first {
+        margin-left: -233px;
+    }
+    .wr-blog .info, .info-second_block, .wr-blog .info-third_block {
+        width: 600px;
+    }
+    .wr-blog img {
+        width: 570px;
+    }
+    .bottom-links {
+        left: 990px;
+    }
+}
+@media only screen and (max-device-width:1400px) {
+    .wr-services .pattern:not(:last-child) {
+        padding-right: 90px;
+    }
+    .wr-portfolio div {
+        margin-left: 610px;
+    }
+    .wr-portfolio .nav ul {
+        margin-left: 170px;
+    }
+    .wr-our_projects {
+        height: 470px;
+    }
+    .wr-our_projects img {
+        width: 310px;
+        height: 307px;
+    }
+    .second {
+        margin-left: 150px;
+    }
+    .third {
+        left: 115px;
+    }
+    .last {
+        left: 225px;
+    }
+    .wr-form {
+        height: 700px;
+    }
+    .links-1 {
+        left: 300px;
+    }
+    .links-2 {
+        left: 400px;
+    }
+    .links-3 {
+        left: 500px;
+    }
+    .bottom p {
+        top: 203px;
+        left: 45px;
+    }
+    .bottom-links {
+        left: 890px;
+    }
+}
+@media only screen and (max-device-width:1366px) and (orientation:landscape) {
+    .logo {
+        font-size: 34px;
+    }
+    .nav a{
+        font-size: 19px;
+    }
+    .wr-portfolio div {
+        margin-left: 628px;
+    }
+    .wr-portfolio .nav ul {
+        margin-left: 412px;
+    }
+    .wr-our_projects {
+        margin-left: 0;
+    }
+    .wr-intro img {
+        width: 60px;
+        padding-left: 640px;
+    }
+    .wr-services .pattern:not(:last-child) {
+        padding-right: 65px;
+    }
+    .wr-services .pattern img {
+        width: 60px;
+    }
+    .wr-articles p {
+        padding-left: 180px;
+    }
+    .wr-portfolio .nav ul {
+        margin-left: 200px;
+    }
+    .first {
+        margin-left: -260px;
+    }
+    .wr-blog .info, .info-second_block, .wr-blog .info-third_block {
+        width: 500px;
+        margin-top: -83px;
+    }
+    .block h2 {
+        font-size: 30px;
+    }
+    .block h3 {
+        font-size: 25px;
+    }
+    .block {
+        margin-left: 7%;
+    }
+    .wr-tweet .tweet p {
+        padding-left: 218px;
+    }
+    .team {
+        margin-left: 169px;
+    }
+}
+
 @media only screen and (max-device-width: 1275px) {
     .slide {
         margin-left: -12px;
     }
-    .wr-clients .slider .next {
-        left: 978px;
-    }
-    .wr-clients .item img {
-        margin-left: 47px;
-    }
     .wr-our_projects img {
-        width: 400px;
+        width: 302px;
         margin-left: 8px;
     }
     .wr-our_projects {
@@ -851,31 +1263,80 @@ header .wrapper {
     .block {
         margin-left: 14%;
     }
+    .wr-intro img {
+        width: 60px;
+        padding-left: 595px;
+    }
+    .wr-articles p {
+        padding-left: 155px;
+    }
+    .wr-portfolio {
+        height: 410px;
+    }
+    .wr-portfolio .nav ul {
+        margin-left: 130px;
+    }
+    .wr-portfolio div {
+        margin-left: 570px;
+    }
+    .first {
+        margin-left: -350px;
+    }
+    .wr-blog .info {
+        padding-top: 0;
+    }
+    .wr-blog .info, .info-second_block, .wr-blog .info-third_block {
+        width: 500px;
+    }
+    .wr-blog img {
+        width: 545px;
+    }
+    .blog-2 img {
+        margin-top: 88px;
+    }
+    .blog-3 img {
+        top: 90px;
+    }
+    .block h2 {
+        font-size: 30px;
+    }
+    .block h3 {
+        font-size: 25px;
+    }
+    .block {
+        margin-left: 6%;
+    }
+    .block hr {
+        right: 195px;
+    }
+    .wr-tweet .tweet p {
+        padding-left: 125px;
+    }
+    .links-1 {
+        left: 225px;
+    }
+    .links-2 {
+        left: 310px;
+    }
+    .links-3 {
+        left: 400px;
+    }
+    .bottom-links {
+        left: 795px;
+    }
 }
 @media only screen and (max-device-width:1240px) {
-    .wr-clients .slider .next {
-        left: 945px;
-    }
-    .wr-clients .item img {
-        margin-left: 11px;
-    }
     .wr-our_projects img {
-        width: 350px;
+        /* width: 350px; */
         margin-left: 48px;
     }
 }
 @media only screen and (max-device-width:1215px) {
-    .wr-clients .slider .next {
-        left: 920px;
-    }
-    .wr-clients .item img {
-        margin-left: -10px;
-    }
     .slide {
         width: 340px;
     }
     .wr-our_projects img {
-        width: 350px;
+        /* width: 350px; */
         margin-left: 37px;
     }
     .wr-blog img {
@@ -896,14 +1357,8 @@ header .wrapper {
         width: 325px;
         height: 350px;
     }
-    .wr-clients .slider .next {
-        left: 905px;
-    }
-    .wr-clients .item img {
-        margin-left: -18px;
-    }
     .wr-our_projects img {
-        width: 340px;
+        /* width: 340px; */
         margin-left: 31px;
     }
     .wr-portfolio div {
@@ -913,36 +1368,7 @@ header .wrapper {
         margin-left: 21px;
     }
 }
-@media only screen and (max-device-width:1366px) and (orientation:landscape) {
-    .logo {
-        font-size: 34px;
-    }
-    .nav a{
-        font-size: 19px;
-    }
-    .wr-clients .item img {
-        margin-left: 60px;
-    }
-    .wr-clients .slider .next {
-        left: 983px;
-    }
-    .wr-portfolio div {
-        margin-left: 628px;
-    }
-    .wr-portfolio .nav ul {
-        margin-left: 412px;
-    }
-    .wr-our_projects {
-        margin-left: 0;
-    }
-    .wr-our_projects img {
-        width: 453px;
-    }
-    .team {
-        margin-left: 169px;
-    }
-}
-@media only screen and (max-device-width:1366px) and (orientation:portrait) {
+@media only screen and (max-device-width:1024px) and (orientation:portrait) {
     header .wrapper {
         display: inherit;
         position: relative;
@@ -1021,14 +1447,14 @@ header .wrapper {
     .wr-clients {
         margin-top: 43px;
     }
+    .text p {
+        font-size: 27px;
+    }
+    .photo p {
+        font-size: 22px;
+    }
     .wr-clients .slider {
         display: inherit;
-    }
-    .wr-clients .slider .next {
-        left: 780px;
-    }
-    .wr-clients .item img {
-        margin-left: 23px;
     }
     .wr-portfolio p {
         font-size: 26px;
@@ -1040,23 +1466,27 @@ header .wrapper {
         margin-top: 30px;
     }
     .wr-portfolio .nav ul {
-        margin-left: 92px;
+        margin-left: -105px;
     }
     .wr-portfolio .nav a {
         font-size: 25px;
     }
     .wr-our_projects {
-        height: 637px;
-    }
-    .wr-our_projects .middle {
-        margin-top: 30px;
-        margin-left: 25%;
+        height: 845px;
     }
     .wr-our_projects img {
-        width: 465px;
+        width: 298px;
+        height: 300px;
     }
+    /* .wr-our_projects .middle {
+        margin-top: 30px;
+        margin-left: 25%;
+    } */
+    /* .wr-our_projects img {
+        width: 465px;
+    } */
     .wr-quote {
-        margin-top: 125px;
+        margin-top: 100px;
     }
     .wr-quote img {
         width: 24px;
@@ -1087,14 +1517,14 @@ header .wrapper {
         font-size: 24px;
     }
     .wr-members .first {
-        margin-left: 155px;
+        margin-left: -32px;
     }
     .wr-members .third {
         top: 323px;
         left:-535px;
     }
     .wr-members .last {
-        left:56%;
+        left:55%;
     }
     .wr-facts h2 {
         font-size: 35px;
@@ -1165,7 +1595,7 @@ header .wrapper {
     }
     .wr-blog .blog-3 img {
         width: 85%;
-        margin-right: 120px;
+        margin-right: 25px;
     }
     .wr-journal {
         margin-top: 110px;
@@ -1173,6 +1603,7 @@ header .wrapper {
     }
     .block {
         margin-top: 37px;
+        margin-left: 15%;
     }
     .block hr {
         width: 86px;
@@ -1199,7 +1630,7 @@ header .wrapper {
     .wr-tweet .tweet p {
         font-size: 34px;
         padding-top: 40px;
-        padding-left: 90px;
+        padding-left: 30px;
     }
     .wr-tweet .at p {
         font-size: 26px;
@@ -1211,18 +1642,28 @@ header .wrapper {
     .wr-form h2 {
         font-size: 35px;
         top: 81px;
+        right: 155px;
     }
     .wr-form p {
-        font-size: 29px;
+        width: 479px;
+        font-size: 26px;
         left: 19px;
         line-height: 27px;
     }
     .wr-form input[type=email], .wr-form input[type=text] {
         font-size: 22px;
+        width: 222px;
+    }
+    .wr-form input[type=email] {
+        left: 22px;
+    }
+    .wr-form input[type=text] {
+        left: 45px;
     }
     .wr-form .message input[type=text] {
         font-size: 22px;
-        left: 47px;
+        left: 22px;
+        width: 471px;
     }
     .triangle-right {
         position: relative;
@@ -1255,7 +1696,325 @@ header .wrapper {
         top: 40px;
     }
     .bottom-links {
-        left: 10px;
+        left: 0px;
+        top: 160px;
+    }
+    .wr-form .bottom-links li {
+        top: -110px;
+        left: 570px;
+    }
+    .bottom p {
+        top: 100px;
+        font-size: 24px;
+    }
+}
+@media only screen and (max-device-width:1024px) and (orientation:landscape) {
+    .nav a {
+        font-size: 30px;
+    }
+    
+    .btn {
+        font-size: 28px;
+    }
+    .wr-intro img {
+        padding-left: 482px;
+        width: 50px;
+    }
+    h2 {
+        font-size: 37px;
+    }
+    .wr-intro p {
+        padding-top: 0;
+        font-size: 24px;
+    }
+    .wr-services .pattern {
+        text-align: center;
+        display: inherit;
+    }
+    .wr-services .pattern:last-child {
+        margin-right: 105px;
+    }
+    .wr-services .pattern img {
+        width: 50px;
+    }
+    .wr-services .pattern h3 {
+        font-size: 30px;
+    }
+    .wr-services .pattern p {
+        width: 100%;
+        font-size: 28px;
+    }
+    .wr-articles p {
+        width: 100%;
+        padding-left: 0;
+        font-size: 27px;
+    }
+    .slider-mobile {
+        display: inherit;
+        margin-left: 100px;
+    }
+    .slider, .slider-portrait {
+        display: none;
+    }
+    .slider .slick-arrow, .slider-mobile .slick-arrow {
+        top: 48%;
+    }
+    .wr-clients {
+        margin-top: 43px;
+    }
+    .text p {
+        font-size: 27px;
+    }
+    .photo p {
+        font-size: 22px;
+    }
+    .wr-clients .slider {
+        display: inherit;
+    }
+    .wr-portfolio p {
+        font-size: 26px;
+    }
+    .wr-portfolio div {
+        margin-left: 469px;
+        height: 10px;
+        width: 94px;
+        margin-top: 30px;
+    }
+    .wr-portfolio .nav ul {
+        margin-left: 0px;
+    }
+    .wr-portfolio .nav a {
+        font-size: 25px;
+    }
+    .wr-our_projects {
+        height: 845px;
+    }
+    .wr-our_projects img {
+        width: 298px;
+        height: 300px;
+    }
+    /* .wr-our_projects .middle {
+        margin-top: 30px;
+        margin-left: 25%;
+    } */
+    /* .wr-our_projects img {
+        width: 465px;
+    } */
+    .wr-quote {
+        margin-top: 100px;
+    }
+    .wr-quote img {
+        width: 24px;
+    }
+    .wr-quote p {
+        font-size: 31px;
+    }
+    .wr-quote .author {
+        font-size: 26px;
+    }
+    .wr-members {
+        margin-bottom: 657px;
+    }
+    .wr-members h2 {
+        font-size: 38px;
+    }
+    .wr-members p {
+        font-size: 32px;
+        margin: 42px 98px 34px;
+    }
+    .wr-members .team img {
+        width: 140px;   
+    }
+    .wr-members h3 {
+        font-size: 26px;
+    }
+    .wr-members h4 {
+        font-size: 24px;
+    }
+    .wr-members .first {
+        margin-left: -80px;
+    }
+    .wr-members .third {
+        top: 315px;
+        left: -517px;
+    }
+    .wr-members .last {
+        left:-22%;
+    }
+    .wr-facts h2 {
+        font-size: 35px;
+        padding-top: 77px;
+    }
+    .statistics .numbers h3 {
+        font-size: 32px;
+        bottom: 140px;
+    }
+    .numbers::after {
+        bottom: 267px;
+    }
+    .statistics .numbers h4 {
+        font-size: 30px;
+        bottom: 161px;
+    }
+    .statistics .numbers2 h3 {
+        font-size: 32px;
+        bottom: 230px;
+    }
+    .numbers2::after {
+        bottom: 360px;
+    }
+    .statistics .numbers2 h4 {
+        font-size: 30px;
+        bottom: 258px;
+    }
+    .statistics::after {
+        bottom: 308px;
+        left: 379px;
+    }
+    .wr-blog .info, .info-second_block, .wr-blog .info-third_block {
+        width: 100%;
+        padding: 0;
+        float: none;
+        margin-top: -22px;
+    }
+    .travel-data p{
+        font-size: 30px;
+    }
+    .title p {
+        font-size: 37px;
+        margin-top: -20px;
+    }
+    .word p {
+        font-size: 37px;
+        padding-top: 0;
+        line-height: 40px;
+    }
+    .wr-blog {
+        margin-top: 90px;
+    }
+    .wr-blog .blog {
+        margin-bottom: 70px;
+    }
+    .wr-blog img {
+        width: 85%;
+        margin: 0 30px;
+    }
+    .blog-2 .travel-data p {
+        margin-right: 0;
+    }
+    .blog-2 .title p {
+        font-size: 37px;
+        margin-left: 0;
+    }
+    .blog-2 .word p {
+        bottom: 0;
+        right: 0;
+    }
+    .wr-blog .blog-3 img {
+        width: 85%;
+        margin-right: 25px;
+    }
+    .wr-journal {
+        margin-top: 110px;
+        height: 345px;
+    }
+    .block {
+        margin-top: 37px;
+        margin-left: 15%;
+    }
+    .block hr {
+        width: 86px;
+        right: 194px;
+        top: 50px;
+    }
+    .block h2 {
+        font-size: 28px;
+    }
+    .block h3 {
+        font-size: 25px;
+    }
+    .journal-center {
+        margin-left: 25%;
+    }
+    .wr-tweet .twitter img {
+        width: 34px;
+    }
+    .wr-tweet .author img {
+        width: 90px;
+        left: 46.4%;
+        bottom: -24px;
+    }
+    .wr-tweet .tweet p {
+        font-size: 34px;
+        padding-top: 40px;
+        padding-left: 30px;
+    }
+    .wr-tweet .at p {
+        font-size: 26px;
+    }
+    .wr-form {
+        height: 705px;
+        margin-top: 92px;
+    }
+    .wr-form h2 {
+        font-size: 35px;
+        top: 81px;
+        right: 155px;
+    }
+    .wr-form p {
+        width: 479px;
+        font-size: 26px;
+        left: 19px;
+        line-height: 27px;
+    }
+    .wr-form input[type=email], .wr-form input[type=text] {
+        font-size: 22px;
+        width: 222px;
+    }
+    .wr-form input[type=email] {
+        left: 22px;
+    }
+    .wr-form input[type=text] {
+        left: 45px;
+    }
+    .wr-form .message input[type=text] {
+        font-size: 22px;
+        left: 22px;
+        width: 471px;
+    }
+    .triangle-right {
+        position: relative;
+        left: 94px;
+        top: 116px;
+        border-top: 8px solid transparent;
+        border-bottom: 8px solid transparent;
+        border-left: 8px solid #ffffff;
+    }
+    .links-1 {
+        left: 65px;
+        bottom: -20px;
+    }
+    .wr-form h3 {
+        font-size: 25px;
+        top: -35px;
+    }
+    .wr-form li {
+        top: -32px;
+    }
+    .wr-form a {
+        font-size: 22px;
+    }
+    .links-2 {
+        left: 123px;
+        bottom: 30px;
+    }
+    .links-3 {
+        left: 180px;
+        top: 40px;
+    }
+    .bottom-links {
+        left: 0px;
+        top: 160px;
     }
     .wr-form .bottom-links li {
         top: -110px;
@@ -1273,12 +2032,7 @@ header .wrapper {
     .nav ul {
         right: -85px;
     }
-    .wr-clients .item img {
-        margin-left: 2px;
-    }
-    .wr-clients .slider .next {
-        left: 763px;
-    }
+    
     .wr-portfolio .nav ul {
         margin-top: 15px;
     }
@@ -1290,7 +2044,7 @@ header .wrapper {
     }
     .wr-our_projects img {
         margin-left: 47px;
-        width: 440px;
+        /* width: 440px; */
     }
     .wr-quote {
         height: 330px;
@@ -1325,13 +2079,7 @@ header .wrapper {
     .wr-intro img {
         padding-left: 430px;
     }
-    .wr-clients .item img {
-        margin-left: 0px;
-        width: 1020px;
-    }
-    .wr-clients .slider .next {
-        left: 695px;
-    }
+   
     .wr-portfolio .nav ul {
         margin-left: 260px;
     }
@@ -1340,7 +2088,7 @@ header .wrapper {
     }
     .wr-our_projects img {
         margin-left: 35px;
-        width: 417px;
+        /* width: 417px; */
     }
     .links-1 {
         left: 26px;
@@ -1384,25 +2132,20 @@ header .wrapper {
         .woman-photo img {
             top: 236px;
         }
-        .wr-clients .item img {
-            margin-left: -10px;
-        }
-        .wr-clients .slider .next {
-            left: 751px;
-        }
+       
         .wr-portfolio .nav ul {
             margin-top: 45px;
             margin-left: 260px;
         }
-        .wr-our_projects .first, .wr-our_projects .second {
+        /* .wr-our_projects .first, .wr-our_projects .second {
             margin-left: 28px;
             width: 452px;
-        }
-        .wr-our_projects .middle {
+        } */
+        /* .wr-our_projects .middle {
             width: 452px;
             margin-top: 30px;
             margin-left: 27%;
-        }
+        } */
         .team {
             margin-left: 135px;
         }
@@ -1436,6 +2179,257 @@ header .wrapper {
         .bottom p {
             top: 125px;
             left: 50px;
+        }
+    }
+    @media only screen and (max-device-width:812px) {
+        .wr-intro img {
+            padding-left: 388px;
+        }
+        .wr-intro p {
+            padding-top: 0;
+            font-size: 20px;
+        }
+        .wr-services {
+            width: 100%;
+            padding-left: 10px;
+        }
+        .wr-services .pattern:not(:last-child) {
+            padding-right: 27px;
+        }
+        .wr-services .pattern p {
+            width: 707px;
+            margin-left: 21px;
+        }
+        .wr-articles p {
+            padding-left: 15px;
+        }
+        .photo p {
+            font-size: 15px;
+        }
+        .slider-mobile {
+            display: inherit;
+            margin-left: 100px;
+        }
+        .slider, .slider-portrait {
+            display: none;
+        }
+        .slider-mobile .slick-arrow {
+            top: 50%;
+            left: 95%;
+        }
+        .wr-clients {
+            margin-top: 43px;
+        }
+        .wr-clients .slider {
+            display: inherit;
+        }
+
+        .wr-portfolio {
+            height: 370px;
+        }
+        .wr-portfolio p {
+            text-align: center;
+            margin: 24px 142px 0;
+        }
+        .wr-portfolio div {
+            margin-top: 30px;
+        }
+        .wr-portfolio .nav button {
+            font-size: 25px;
+            margin-left: 40px;
+        }
+        .wr-portfolio .nav ul {
+            margin-top: 25px;
+            margin-left: -11px;
+        }
+        .wr-our_projects {
+            height: 615px;
+        }
+        .wr-our_projects img {
+            width: 237px;
+            height: 237px;
+            margin-left: 24px;
+        }
+        .wr-quote {
+            height: 333px;
+            margin-top: 145px;
+        }
+        .wr-quote p {
+            margin: 58px 120px 41px;
+        }
+        .wr-members {
+            margin-top: 40px;
+            margin-bottom: 750px;
+        }
+        .wr-members p {
+            margin: 42px 175px 91px;
+        }
+        .wr-members .first {
+            margin-left: -135px;
+        }
+        .wr-members .second {
+            margin-left: 100px;
+        }
+        .wr-members .third {
+            top: 0;
+            left: 60px;
+        }
+        .last {
+            top: 21px;
+            left: 145px;
+        }
+        .wr-facts {
+            background-position: left;
+        }
+        .wr-blog {
+            margin-top: 50px;
+        }
+        .wr-blog .info, .wr-blog .info-third_block {
+            width: 310px;
+            float: left;
+        }
+        .wr-blog .info-second_block {
+            float: right;
+            width: 310px;
+        }
+        .wr-blog img {
+            width: 395px;
+            margin-top: 60px;
+        }
+        .blog-2 .info-second_block img {
+            margin-left: -45px;
+        }
+        .travel-data p {
+            font-size: 25px;
+        }
+        .title p {
+            font-size: 25px;
+            margin-top: -15px;
+        }
+        .blog-2 .title p {
+            font-size: 25px;
+        }   
+        .word p {
+            font-size: 22px;
+        }
+        .wr-blog .info-third_block {
+            padding-left: 50px;
+            padding-top: 50px;
+        }
+        .wr-blog .blog-3 img {
+            width: 395px;
+            margin-top: -15px;
+        }
+        .block {
+            margin-left: 8%;
+        }
+        .wr-tweet .twitter a {
+            left: 49.5%;
+        }
+        .wr-tweet .author img {
+            left: 46.5%;
+        }
+        .wr-form {
+            height: 735px;
+        }
+        .wr-form p {
+            width: 735px;
+        }
+        .wr-tweet .tweet p {
+            padding-left: 15px;
+            width: 775px;
+        }
+        .wr-form input[type=text] {
+            left: -203px;
+            top: 167px;
+        }
+        .wr-form .message input[type=text] {
+            font-size: 22px;
+            left: 22px;
+            top: 190px;
+            width: 222px;
+        }
+        .wr-form .send p {
+            position: relative;
+            top:320px;
+        }
+        .links-1 {
+            left: -140px;
+            top: 210px;
+        }
+        .links-2 {
+            left: -100px;
+            top: 151px;
+        }
+        .links-3 {
+            left: 680px;
+            top: -117px;
+        }
+        .triangle-right {
+            top: 271px;
+        }
+        .wr-form .bottom p {
+            width: 300px;
+        }
+        .bottom p {
+            top: 50px;
+            left: -92px;
+        }
+        .bottom-links {
+            left: 515px;
+            top: 0px;
+        }
+    }
+    @media only screen and (max-device-width:800px) {
+        .logo {
+            margin-left: -155px;
+        }
+        .wr-intro p {
+            padding-top: 0;
+            font-size: 27px;
+        }
+        .wr-portfolio .nav ul {
+            margin-top: 7px;
+            margin-left: 60px;
+        }
+        .wr-blog .info-third_block {
+            padding-left: 30px;
+        }
+        .bottom-links {
+            left: 500px;
+        }
+    }
+    @media only screen and (max-device-width:768px) {
+        .logo {
+            margin-left: -170px;
+        }
+        .wr-articles p {
+            padding-left: 0px;
+        }
+        .wr-portfolio .nav ul {
+            margin-top: 0px;
+            margin-left: 50px;
+        }
+        .wr-our_projects img {
+            width: 226px;
+        }
+        .wr-blog .info-third_block {
+            padding-left: 0px;
+        }
+        .wr-tweet .tweet p {
+            padding-left: 0px;
+        }
+        .links-1 {
+            left: -150px;
+        }
+        .links-2 {
+            left: -110px;
+        }
+        .links-3 {
+            left: 650px;
+        }
+        .bottom-links {
+            left: 475px;
         }
     }
     @media only screen and (max-device-width:740px) and (orientation:landscape) {
@@ -1491,13 +2485,6 @@ header .wrapper {
         .wr-clients .slider {
             display: inherit;
         }
-        .wr-clients .item img {
-            margin-left: 21px;
-        }
-        .wr-clients .slider .next {
-            left: 526px;
-            top: 64px;
-        }
         .wr-portfolio {
             height: 343px;
         }
@@ -1507,9 +2494,9 @@ header .wrapper {
         .wr-portfolio .nav ul {
             margin-left: 137px;
         }
-        .wr-our_projects .first, .wr-our_projects .second, .wr-our_projects .middle {
+        /* .wr-our_projects .first, .wr-our_projects .second, .wr-our_projects .middle {
             width: 329px;
-        }
+        } */
         .wr-quote {
             margin-top: 50px;
         }
@@ -1633,7 +2620,353 @@ header .wrapper {
             top: 13px;
         }
     }
+    @media only screen and (max-device-width:740px) {
+        .wr-clients .clients-slider {
+            display: none;
+        }
+        .wr-clients .clients-slider-mobile {
+            display: inherit;
+        }
+    }
+    @media only screen and (max-device-width:414px) {
+        .logo {
+            margin-left: -525px;
+        }
+        .nav ul {
+            right: 450px;
+        }
+        .wr-home p {
+            font-size: 55px;
+            left: 560px;
+            padding-top: 0px;
+        }
+        .wr-home hr {
+            width: 190px;
+            left: 315px;
+        }
+        .wr-home h3 {
+            font-size: 22px;
+            margin-left: 575px;
+            width: 332px;
+        }
+        .wr-home .btn {
+            margin-left: 722px;
+            font-size: 28px;
+            position: relative;
+            left: -87px;
+            height: 55px;
+            border: 3px solid rgb(0, 0, 0);
+        }
+        .wr-intro {
+            height: 580px;
+        }
+        .wr-intro img {
+            padding-left: 182px;
+        }
+        .wr-intro p {
+            font-size: 21px;
+            width: 400px;
+        }
+        .container {
+            width: 435px;
+        }
+        .wr-services .pattern p {
+            width: 410px;
+            margin-left: -12px;
+        }
+        .wr-services .pattern:last-child img, .wr-services .pattern:last-child h3 {
+            margin-left: 54px;
+        }
+        .wr-articles p {
+            width: 412px;
+        }
+        .slider-portrait {
+            display: inherit;
+            margin-left: 25px;
+        }
+        .slider, .slider-mobile {
+            display: none;
+        }
+        .slide {
+            height: 342px;
+        }
+        .slider-portrait .slick-arrow {
+            top: 52%;
+            left: 86%;
+        }
+        .slide .photo img {
+            width: 60px;
+            padding-top: 60px;
+        }
+        .slide .woman-photo .photo img {
+            width: 60px;
+            padding-top: 50px;
+        }
+        .wr-portfolio {
+            height: 430px;
+        }
+        .wr-portfolio p {
+            text-align: center;
+            margin: 24px 0px 0;
+        }
+        .wr-portfolio div {
+            margin-left: 39%;
+        }
+        .wr-portfolio .nav ul {
+            margin-top: 0px;
+            margin-left: 360px;
+        }
+        .wr-portfolio .nav li {
+            margin-right: -40px;
+        }
+        .wr-portfolio .nav button {
+            font-size: 18px;
+        }
+        .wr-our_projects {
+            height: 660px;
+        }
+        .wr-our_projects img {
+            width: 187px;
+            height: 190px;
+            margin-left: 11px;
+        }
+        .wr-quote p {
+            margin: 58px 10px 41px;
+            font-size: 26px;
+        }
+        .wr-members {
+            margin-top: 40px;
+            margin-bottom: 1350px;
+        }
+        .wr-members p {
+            margin: 42px 15px 50px;
+        }
+        .wr-members .first {
+            margin-left: -200px;
+        }
+        .wr-members .second {
+            margin-left: 0px;
+        }
+        .wr-members .third {
+            top: 0;
+            left: 0px;
+        }
+        .wr-members .last {
+            left: 14px;
+        }
+        .last h3 {
+            position: relative;
+            top: -3px;
+            left: -15px;
+        }
+        .last h4 {
+            right: 0px;
+        }
+        .statistics::after {
+            bottom: 308px;
+            left: 182px;
+        }
+        .wr-blog {
+            margin-top: 15px;
+        }
+        .wr-blog .blog {
+            margin-bottom: 15px;
+        }
+        .travel-data p {
+            width: 280px;
+            font-size: 20px;
+            margin-left: 75px;
+        }
+        .title p {
+            font-size: 25px;
+            width: 311px;
+            margin-top: -15px;
+            margin-left: 65px;
+        }
+        .word p {
+            font-size: 22px;
+            margin-left: 27px;
+            width: 372px;
+        }
+        .wr-blog img {
+            width: 403px;
+            margin: 0px 21px;
+        }
+        .blog-2 .travel-data p {
+            margin-left: -54px;
+        }
+        .blog-2 .title p {
+            font-size: 25px;
+            margin-left: -95px;
+            width: 375px;
+        }
+        .blog-2 .word p {
+            bottom: 0;
+            right: 125px;
+        }
+        .wr-blog .blog-2 {
+            margin-bottom: -40px;
+        }
+        .wr-blog .blog-3 img {
+            width: 395px;
+            margin-top: -85px;
+        }
+        .wr-journal {
+            margin-top: 110px;
+            height: 655px;
+        }
+        .block {
+            margin-left: 32%;
+        }
+        .block hr {
+            width: 106px;
+            right: 194px;
+            top: 60px;
+        }
+        .journal-center {
+            margin-left: 0%;
+        }
+        .wr-tweet .twitter a {
+            left: 46.3%;
+        }
+        .wr-tweet .author img {
+            left: 40%;
+        }
+        .wr-tweet .tweet p {
+            font-size: 28px;
+            width: 436px;
+            padding-top: 15px;
+        }
+        .wr-form {
+            height: 940px;
+        }
+        .wr-form p {
+            width: 400px;
+            font-size: 23px;
+        }
+        .wr-form input[type=email], .wr-form input[type=text] {
+            font-size: 22px;
+            width: 160px;
+        }
+        .wr-form input[type=text] {
+            left: 55px;
+            top: 120px;
+        }
+        .wr-form .message input[type=text] {
+            top: 145px;
+            width: 358px;
+        }
+        .links-1 {
+            left: 25px;
+            top: 0;
+        }
+        .links-2 {
+            left: 34px;
+            top: -57px;
+        }
+        .links-3 {
+            left: 72px;
+            top: 28px;
+        }
+        .wr-form .send p {
+            position: relative;
+            top: 423px;
+            width: 365px;
+        }
+        .triangle-right {
+            top: 377px;
+            left: 83px;
+        }
+        .bottom p {
+            top: 13px;
+            left: 19px;
+        }
+        .bottom-links {
+            left: 515px;
+            top: -79px;
+        }
+        .bottom-links {
+            left: 170px;
+            top: 33px;
+        }
+    }
+    @media only screen and (max-device-width:384px) {
+        .nav ul {
+            right: 465px;
+        }
+        .wr-home p {
+            left: 546px;
+        }
+        .wr-home hr {
+            left: 300px;
+        }
+        .wr-home h3 {
+            margin-left: 550px;
+        }
+        .wr-home .btn {
+            left: -103px;
+        }
+        .wr-intro p {
+            width: 384px;
+        }
+        .wr-services .pattern p {
+            width: 373px;
+            margin-left: 5px;
+        }
+        .wr-articles p {
+            width: 379px;
+        }
+        h2 {
+            margin-left: -30px;
+        }
+        .wr-clients .clients-slider img, .wr-clients .clients-slider-mobile img {
+            margin-top: 15px;
+            margin-left: -14px;
+        }
+        .wr-our_projects img {
+            width: 173px;
+            height: 186px;
+            margin-left: 11px;
+        }
+        .wr-quote p {
+            font-size: 23px;
+        }
+        .wr-members p {
+            font-size: 22px;
+        }
+        .travel-data p {
+
+            margin-left: 60px;
+        }
+        .title p {
+            margin-left: 40px;
+        }
+        .word p {
+            margin-left: 11px;
+        }
+        .wr-blog img {
+            margin: 0 -16px;
+        }
+        .blog-2 .word p {
+            right: 100px;
+        }
+        .wr-tweet .tweet p {
+            width: 375px;
+        }
+        .wr-form h2 {
+            right: 145px;
+        }
+        .wr-form p {
+            width: 351px;
+        }
+        .links-3 {
+            left: 50px;
+        }
+    }
     @media only screen and (max-device-width:375px) {
+        .logo {
+            margin-left: -30px;
+        }
         .wr-header {
             background-position: bottom;
         }
@@ -1641,35 +2974,59 @@ header .wrapper {
             left: 90px;
         }
         .nav ul {
-            right: -23px;
+            right: -40px;
         }
         .wr-home p {
             font-size: 52px;
-            left: 695px;
+            left: 555px;
             padding-top: 0;
         }
         .wr-home hr {
-            left: 455px;
+            left: 300px;
+            width: 165px;
         }
         .wr-home h3 {
-            font-size: 31px;
-            margin-left: 683px;
+            font-size: 20px;
+            margin-left: 575px;
             width: 302px;
         }
-        .btn {
-            margin: 53px 0 0 709px;
+        .wr-home .btn {
+            left: -114px;
+        }
+        .wr-intro {
+            height: 360px;
         }
         .wr-intro img {
             padding-left: 156px;
         }
+        .wr-intro h2 {
+            margin-left: -72px;
+        }
         .wr-intro p {
-            padding: 39px 5px 0;
+            padding: 0px 10px 0;
+            font-size: 22px;
+            width: 354px;
+        }
+        .wr-articles h2 {
+            margin-left: -45px;
+        }
+        .wr-articles p {
+            padding-left: 28px;
+            width: 75%;
         }
         .wr-services {
             margin-top: 295px;
         }
+        .wr-services .pattern h3 {
+            font-size: 24px;
+        }
         .wr-services .pattern {
             text-align: center;
+        }
+        .wr-services .pattern p {
+            width: 307px;
+            font-size: 19px;
+            margin-left: 28px;
         }
         .wr-services .pattern:last-child {
             margin-right: 76px;
@@ -1707,23 +3064,21 @@ header .wrapper {
         .wr-clients .slider {
             display: inherit;
         }
-        .wr-clients .item img {
-            margin-left: -293px;
-            margin-top: 26px;
-            width: 750px;
+        .wr-clients .slick-arrow {
+            position: relative;
+            bottom: 90px;
+            left: 106%;
         }
-        .wr-clients .slider .next {
-            left: 202px;
-            top: 52px;
-        }
-        .slick-slide img {
-            width: 12px;
+        .wr-clients .clients-slider img, .wr-clients .clients-slider-mobile img {
+            margin-top: 15px;
+            width: 61px;
         }
         .wr-portfolio {
-            height: 465px;
+            height: 400px;
         }
         .wr-portfolio p {
             margin: 33px 10px 0;
+            font-size: 21px;
         }
         .wr-portfolio div {
             margin-left: 40%;
@@ -1731,8 +3086,12 @@ header .wrapper {
             width: 93px;
             margin-top: 26px;
         }
+        .wr-portfolio .nav button {
+            font-size: 19px;
+            margin-left: 0;
+        }
         .wr-portfolio .nav ul {
-            margin-left: -85px;
+            margin-left: -95px;
             margin-top: -10px;
         }
         .wr-portfolio .nav li {
@@ -1743,16 +3102,12 @@ header .wrapper {
         }
         .wr-our_projects {
             margin-top: 25px;
+            height: 400px;
         }
-        .wr-our_projects .first, .wr-our_projects .second, .wr-our_projects .middle {
-            width: 375px;
-            margin-left: 0;
-        }
-        .wr-our_projects .second {
-            margin-top: 15px;
-        }
-        .wr-our_projects .middle {
-            margin-top: 15px;
+        .wr-our_projects img {
+            width: 185px;
+            height: 185px;
+            margin-left: 0px;
         }
         .wr-quote {
             margin-top: 410px;
@@ -1764,19 +3119,39 @@ header .wrapper {
             height: 425px;
         }
         .wr-members {
-            margin-bottom: 160vh;
+            margin-bottom: 100vh;
+            margin-top: 88px;
         }
         .wr-members h2 {
             margin-top: -60px;
         }
         .wr-members p {
             margin: 42px 25px 34px;
-        }
+            font-size: 21px;
+        }  
+        
         .wr-members .first, .wr-members .second {
             margin-left: -9px;
         }
+        .wr-members .first {
+            margin-left: -214px;
+        }
         .wr-members .third, .wr-members .last {
             left: -9px;
+        }
+        .wr-members .team img {
+            width: 65px;
+            margin-left: 33px;
+        }
+        .wr-members .first img{
+            margin-left: 232px;
+        }
+        .wr-members h3 {
+            font-size: 22px;
+            padding-top: 0px;
+        }
+        .wr-members h4 {
+            font-size: 19px;
         }
         .wr-facts {
             background-position: left;
@@ -1787,21 +3162,54 @@ header .wrapper {
         .statistics::before {
             height: 140%;
         }
+        .statistics::after {
+            bottom: 276px;
+            left: 150px;
+        }
         .statistics .numbers h4, .statistics .numbers2 h4 {
             font-size: 25px;
             text-align: center;
         }
         .word p {
-            font-size: 25px;
+            font-size: 20px;
             width: 353px;
             margin-left: 10px;
         }
         .travel-data p {
-            font-size: 25px;
+            font-size: 21px;
+            margin-left: 62px;
         }
         .title p {
-            font-size: 33px;
+            font-size: 19px;
             margin-top: -15px;
+            margin-left: 59px;
+        }
+        .wr-blog .blog-2 {
+            margin-bottom: -46px;
+            margin-top: -20px;
+        }
+        .blog-2 .travel-data p {
+            margin-left: -12px;
+            font-size: 21px;
+        }
+        .blog-2 .title p {
+            font-size: 19px;
+            margin-left: -55px;
+        }
+        .blog-2 .word p {
+            bottom: 0;
+            right: 55px;
+        }
+        .blog-3 .travel-data p {
+            margin-left: 45px;
+            font-size: 21px;
+        }
+        .blog-3 .title p {
+            font-size: 19px;
+            margin-left: 29px;
+        }
+        .blog-3 .word p {
+            margin-left: 13px;
         }
         .wr-journal {
             height: 545px;
@@ -1814,7 +3222,7 @@ header .wrapper {
             margin: 0 -84px;
         }
         .wr-blog .blog-3 img {
-            margin-top: -60px;
+            margin-top: -90px;
             width: 345px;
             left: 42px;
             margin-right: 0;
@@ -1868,147 +3276,218 @@ header .wrapper {
         .wr-form .send p {
             width: 351px;
             position: relative;
-            top: 385px;
+            top: 450px;
         }
         .triangle-right {
             left: 83px;
-            top: 336px;
+            top: 402px;
         }
         .links-1 {
             left: 15px;
-            bottom: 31px;
+            top: -37px;
         }
         .links-2 {
-            left: 17px;
-            bottom: 81px;
+            left: 27px;
+            top: -94px;
         }
         .links-3 {
             top: -8px;
             left: 42px;
         }
         .wr-form .bottom p {
-            font-size: 24px;
+            font-size: 21px;
+            width: 372px;
             position: relative;
-            top: 33px;
+            top: 65px;
         }
         .bottom-links {
             left: 165px;
+            top: 75px;
         }
         .wr-form .bottom-links li {
             left: -155px;
-            top: -40px;
+            top: 0px;
         }
     }
-    @media only screen and (max-device-width:812px) {
+    @media only screen and (max-device-width:320px) {
+        .logo {
+            margin-left: -65px;
+        }
+        .nav ul {
+            right: 5px;
+        }
+        .wr-home p {
+            font-size: 48px;
+            left: 405px;
+        }
+        .wr-home hr {
+            top: -45px;
+            left: 188px;
+        }
+        .wr-home h3 {
+            font-size: 19px;
+            position: relative;
+            left: -170px;
+        }
+        .btn {
+            margin: 53px 0 0 825px;
+            font-size: 24px;
+            height: 39px;
+            width: 160px;
+        }
+        .wr-home .btn {
+            left: -175px;
+            font-size: 25px;
+        }
         .wr-intro img {
-            padding-left: 388px;
+            padding-left: 135px;
         }
-        .wr-services {
-            padding-left: 10px;
+        .wr-intro h2 {
+            margin-left: -110px;
         }
-        .wr-services .pattern:not(:last-child) {
-            padding-right: 27px;
+        .wr-intro p {
+            padding: 0px 16px 0;
+            font-size: 20px;
+            width: 296px;
+        }
+        .wr-services .pattern:last-child img, .wr-services .pattern:last-child h3 {
+            margin-left: 0px;
         }
         .wr-services .pattern p {
-            width: 250px;
+            margin-left: 0px;
+        }
+        .slider-portrait .slick-arrow {
+            left: 93%;
+        }
+        .wr-clients .slick-arrow {
+            left: 106%;
+        }
+        .wr-articles h2 {
+            margin-left: -93px;
         }
         .wr-articles p {
-            padding-left: 15px;
-        }
-        .slider-mobile {
-            display: inherit;
-            margin-left: 100px;
-        }
-        .slider, .slider-portrait {
-            display: none;
-        }
-        .slider-mobile .slick-arrow {
-            top: 50%;
-            left: 95%;
-        }
-        .wr-clients {
-            margin-top: 43px;
-        }
-        .wr-clients .slider {
-            display: inherit;
-        }
-        .wr-clients .item img {
-            margin-left: -14px;
-            width: 915px;
-        }
-        .wr-clients .slider .next {
-            left: 591px;
+            padding-left: 28px;
+            width: 63%;
         }
         .wr-portfolio {
-            height: 300px;
-        }
-        .wr-portfolio p {
-            text-align: center;
-            margin: 24px 142px 0;
-        }
-        .wr-portfolio div {
-            margin-top: 30px;
+            height: 420px;
         }
         .wr-portfolio .nav ul {
-            margin-top: 25px;
-            margin-left: 180px;
+            margin-left: -47px;
         }
-        .wr-our_projects .first, .wr-our_projects .second {
-            margin-left: 21px;
-            width: 375px;
+        .wr-portfolio .nav button {
+            font-size: 14px;
         }
-        .wr-our_projects .middle {
-            width: 375px;
-            margin-top: 25px;
-            margin-left: 26%;
+        .wr-our_projects img {
+            width: 158px;
+            height: 158px;
+            margin-left: 0px;
         }
-        .wr-quote {
-            height: 300px;
-            margin-top: 145px;
-        }
-        .wr-quote p {
-            margin: 58px 120px 41px;
+        .wr-our_projects {
+            margin-top: 23px;
+            height: 280px;
         }
         .wr-members {
-            margin-top: 40px;
-            margin-bottom: 400px;
+            margin-bottom: 142vh;
         }
-        .wr-members p {
-            margin: 42px 175px 91px;
-        }
-        .first {
-            margin-left: -105px;
+        .wr-members .first {
+            margin-left: -236px;
         }
         .wr-members .second {
-            margin-left: 100px;
+            margin-left: -33px;
         }
-        .wr-facts {
-            background-position: left;
+        .wr-members .third, .wr-members .last {
+            left: -33px;
         }
-        .wr-blog {
-            margin-top: 0px;
+        .wr-members h3 {
+            font-size: 21px;
+            padding-top: 0px;
         }
-        .wr-blog .info, .info-second_block, .wr-blog .info-third_block {
-            width: 310px;
+        .travel-data p {
+            font-size: 21px;
+            margin-left: 37px;
         }
-        .wr-blog .info-third_block {
-            padding-left: 100px;
+        .title p {
+            font-size: 19px;
+            margin-top: -15px;
+            margin-left: 38px;
         }
-        .block {
-            margin-left: 8%;
+        .word p {
+            font-size: 17px;
+            margin-left: -9px;
         }
-        .wr-tweet .twitter a {
-            left: 48.3%;
+        .blog-2 .travel-data p {
+            margin-left: -5px;
+            font-size: 21px;
         }
-        .wr-tweet .author img {
-            left: 46.5%;
+        .blog-2 .title p {
+            font-size: 19px;
+            margin-left: -13px;
+        }
+        .blog-2 .word p {
+            bottom: 0;
+            right: 9px;
+        }
+        .blog-3 .travel-data p {
+            margin-left: 18px;
+            font-size: 21px;
+        }
+        .blog-3 .title p {
+            font-size: 19px;
+            margin-left: 17px;
+        }
+        .blog-3 .word p {
+            margin-left: -9px;
         }
         .wr-tweet .tweet p {
-            padding-left: 15px;
-            width: 775px;
+            padding-left: 0px;
+        }
+        .wr-form p {
+            font-size: 23px;
+            left: 14px;
+            width: 295px;
+            top: 80px;
+        }
+        .wr-form input[type=text] {
+            width: 160px;
+            top: 135px;
+            left: -147px;
+        }
+        .wr-form .message input[type=text] {
+            width: 290px;
+            top: 147px;
+            left: 15px;
+        }
+        .links-1 {
+            left: 15px;
+            top: 5px;
+        }
+        .wr-form h3 {
+            font-size: 20px;
+            top: -15px;
+            left: -5px;
+        }
+        .wr-form a {
+            font-size: 18px;
+        }
+        .links-2 {
+            top: -51px;
+        }
+        .links-3 {
+            top: 31px;
+            left: 47px;
+        }
+        .wr-form .send p {
+            width: 295px;
+        }
+        .wr-form .bottom p {
+            font-size: 18px;
+            width: 297px;
+            top: 85px;
         }
         .bottom-links {
-            left: 655px;
-            top: -15px;
+            top: 111px;
         }
     }
+    
+    
